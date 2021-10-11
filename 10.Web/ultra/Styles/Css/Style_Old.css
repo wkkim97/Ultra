@@ -1,0 +1,66 @@
+﻿.event-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: #676767;
+    border-bottom: 4px solid #0094ff;
+    opacity: 0.9;
+}
+
+    .event-header h3 {
+        display: inline-block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+
+    .event-header .btn-group {
+        padding-right: 10px;
+        margin-top: 5px;
+    }
+
+
+#row-main {
+    overflow-x: hidden; /* necessary to hide collapsed sidebar */
+}
+
+.collapsed {
+    display: none; /* hide it for small displays */
+}
+
+.col-md-9 .width-12,
+.col-md-12 .width-9 {
+    display: none; /* just hiding labels for demo purposes */
+}
+
+@media (min-width: 768px) {
+    .collapsed {
+        display: block;
+        margin-left: -25%; /* same width as sidebar */
+    }
+}
+
+#content {
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+
+#sidebar {
+    -webkit-transition: margin 0.3s ease;
+    -moz-transition: margin 0.3s ease;
+    -o-transition: margin 0.3s ease;
+    transition: margin 0.3s ease;
+}
+
+.tab-content-border {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}

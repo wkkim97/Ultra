@@ -1,0 +1,311 @@
+2018-01-05 13:24:15 - =================================================
+2018-01-05 13:24:15 - =================================================
+2018-01-05 13:24:15 - Interval : 5
+2018-01-05 13:24:15 - DailyTime : 10:10:00
+2018-01-05 13:24:15 - LogWriteYN : Y
+2018-01-05 13:24:15 - basicdate : 3
+2018-01-05 13:24:15 - LogFilePath : D:\Ultra-Dev\20.WinApp\SendMailAgent\SendMailAgent_Log
+2018-01-05 13:24:15 - smtpServer : exsmtp.de.bayer.cnb
+2018-01-05 13:24:15 - mailDomain : naver.com
+2018-01-05 13:24:15 - sender : ultra_kr@bayer.com
+2018-01-05 13:24:15 - senderps : oDRbIXLTkq9PSvIoMsUhcg==
+2018-01-05 13:24:15 - eventUrl : http://localhost/Ultra/Pages/Event/
+2018-01-05 13:24:15 - serviceUrl : http://localhost/ultra-svc/UltraCommon.svc
+2018-01-05 13:24:15 - mailFormat : D:\Ultra-Dev\10.Web\ultra\Config\MailFormat.xml
+2018-01-05 13:24:15 - =================================================
+2018-01-05 13:24:15 - =================================================
+2018-01-05 13:25:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:25:17 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 13:25:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:25:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:25:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:30:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:30:17 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 13:30:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:30:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:30:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:35:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:35:17 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 13:35:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:35:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:35:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:40:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:40:17 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 13:40:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:40:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:40:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:45:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:45:17 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 13:45:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:45:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:45:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:50:17 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:50:17 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 13:50:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:50:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:50:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:55:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:55:18 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 13:55:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:55:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 13:55:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:00:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:00:18 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:00:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:00:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:00:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:05:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:05:18 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:05:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:05:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:05:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:10:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:10:18 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:10:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:10:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:10:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:15:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:15:18 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:15:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:15:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:15:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:20:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:20:18 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:20:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:20:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:20:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:25:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:25:18 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:25:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:25:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:25:18 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:30:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:30:19 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:30:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:30:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:30:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:35:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:35:19 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:35:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:35:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:35:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:40:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:40:19 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:40:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:40:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:40:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:45:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:45:19 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:45:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:45:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:45:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:50:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:50:19 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:50:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:50:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:50:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:55:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:55:19 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 14:55:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:55:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 14:55:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:00:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:00:19 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:00:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:00:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:00:19 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:05:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:05:20 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:05:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:05:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:05:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:10:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:10:20 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:10:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:10:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:10:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:15:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:15:20 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:15:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:15:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:15:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:20:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:20:20 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:20:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:20:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:20:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:25:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:25:20 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:25:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:25:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:25:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:30:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:30:20 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:30:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:30:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:30:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:35:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:35:20 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:35:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:35:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:35:20 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:40:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:40:21 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:40:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:40:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:40:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:45:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:45:21 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:45:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:45:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:45:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:50:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:50:21 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:50:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:50:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:50:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:55:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:55:21 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 15:55:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:55:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 15:55:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:00:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:00:21 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:00:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:00:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:00:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:05:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:05:21 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:05:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:05:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:05:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:10:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:10:21 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:10:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:10:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:10:21 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:15:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:15:22 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:15:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:15:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:15:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:20:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:20:22 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:20:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:20:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:20:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:25:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:25:22 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:25:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:25:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:25:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:30:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:30:22 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:30:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:30:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:30:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:35:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:35:22 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:35:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:35:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:35:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:40:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:40:22 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:40:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:40:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:40:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:45:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:45:22 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:45:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:45:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:45:22 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:50:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:50:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:50:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:50:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:50:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:55:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:55:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 16:55:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:55:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 16:55:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:00:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:00:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:00:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:00:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:00:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:05:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:05:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:05:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:05:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:05:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:10:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:10:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:10:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:10:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:10:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:15:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:15:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:15:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:15:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:15:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:20:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:20:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:20:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:20:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:20:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:25:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:25:23 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:25:23 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:25:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:25:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:30:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:30:24 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:30:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:30:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:30:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:35:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:35:24 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:35:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:35:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:35:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:40:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:40:24 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:40:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:40:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:40:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:45:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:45:24 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:45:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:45:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:45:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:50:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:50:24 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:50:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:50:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:50:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:55:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:55:24 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 17:55:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:55:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 17:55:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:00:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:00:24 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 18:00:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:00:24 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:00:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:05:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:05:25 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 18:05:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:05:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:05:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:10:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:10:25 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 18:10:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:10:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:10:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:15:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:15:25 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-05 18:15:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:15:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-05 18:15:25 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.

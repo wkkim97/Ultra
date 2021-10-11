@@ -1,0 +1,383 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Config", "00.Config", "{0FA2D41D-ABEB-4DEE-8322-18D2FF76939D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Core", "01.Core", "{BBD49C74-3659-47C4-9D7D-D5763CBDD496}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Com", "02.Com", "{330053CB-2BB8-4E16-B7C4-70925674FA79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.Web", "10.Web", "{FAB139CD-6F9E-4FE1-8F61-8A47C77862A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20.WinApp", "20.WinApp", "{3A7D6B62-F796-401B-8F55-8D03642884F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "90.Lib", "90.Lib", "{C51DBF5B-3CAB-4ED5-A1D9-34D200631848}"
+	ProjectSection(SolutionItems) = preProject
+		90.Lib\DocumentFormat.OpenXml.dll = 90.Lib\DocumentFormat.OpenXml.dll
+		90.Lib\EntityFramework.dll = 90.Lib\EntityFramework.dll
+		90.Lib\EntityFramework.SqlServer.dll = 90.Lib\EntityFramework.SqlServer.dll
+		90.Lib\HiQPdf.dep = 90.Lib\HiQPdf.dep
+		90.Lib\HiQPdf.Free.dll = 90.Lib\HiQPdf.Free.dll
+		90.Lib\Newtonsoft.Json.dll = 90.Lib\Newtonsoft.Json.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11.Wcf", "11.Wcf", "{6BC7057A-C0A8-48F1-AFE4-A8B7D03AEF8E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ultra-Site/ultra", "http://localhost:4042/ultra", "{957077B3-1FF4-4741-A28E-A947B111FB34}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{42b67805-4e8a-4f99-acb8-422f4d987a3c}|Bayer.Ultra.Core.dll;{4DA5A06D-C707-476D-A6CA-543265EED5EF}|Bayer.Ultra.Framework.dll;{e5edc922-fc49-4616-b712-adfa5b78a2ed}|Bayer.Ultra.WebBase.dll;{b5e9e250-dc4b-4cc4-b88c-fa8132a62cd7}|Bayer.Ultra.Framework.Common.dll;{2746a4ab-d1c5-46be-a4f9-e758bc0cf28f}|Bayer.Ultra.BSL.Configuration.dll;{970DD99E-A747-45FA-8550-683CE39BDE7B}|Bayer.Ultra.Framework.Database.dll;{d43bd142-6cc0-4675-b27e-08cc2e14212f}|Bayer.Ultra.BSL.Common.dll;{8f630735-ef0b-47a2-9021-fb121a21896b}|Bayer.Ultra.BSL.Report.dll;{3FAB94D0-B31B-44BE-A072-3085B53F607E}|Bayer.Ultra.BSL.Excel.dll;{1a7a229f-873f-4d79-8f0a-f3ef96ba4571}|Bayer.Ultra.BSL.Approval.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ultra"
+		Debug.AspNetCompiler.PhysicalPath = "10.Web\ultra\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ultra\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ultra"
+		Release.AspNetCompiler.PhysicalPath = "10.Web\ultra\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ultra\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "10.Web\ultra\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571} = {1A7A229F-873F-4D79-8F0A-F3EF96BA4571}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Framework", "02.Com\Bayer.Ultra.Framework\Bayer.Ultra.Framework.csproj", "{4DA5A06D-C707-476D-A6CA-543265EED5EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.WebBase", "04.WebBase", "{917BECA6-F6E6-40E9-A974-D09B0D47A3FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Core", "01.Core\Bayer.Ultra.Core\Bayer.Ultra.Core.csproj", "{42B67805-4E8A-4F99-ACB8-422F4D987A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Framework.Database", "02.Com\Bayer.Ultra.Framework.Database\Bayer.Ultra.Framework.Database.csproj", "{970DD99E-A747-45FA-8550-683CE39BDE7B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ultra-Site/ultra-svc", "http://localhost:4042/ultra-svc", "{4E654859-FBC1-462E-A9BB-B667AC4B43D0}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{b70c6b39-7f89-4699-9d14-d78ff59970c1}|Bayer.Ultra.WcfBase.dll;{D43BD142-6CC0-4675-B27E-08CC2E14212F}|Bayer.Ultra.BSL.Common.dll;{42B67805-4E8A-4F99-ACB8-422F4D987A3C}|Bayer.Ultra.Core.dll;{970DD99E-A747-45FA-8550-683CE39BDE7B}|Bayer.Ultra.Framework.Database.dll;{4DA5A06D-C707-476D-A6CA-543265EED5EF}|Bayer.Ultra.Framework.dll;{b5e9e250-dc4b-4cc4-b88c-fa8132a62cd7}|Bayer.Ultra.Framework.Common.dll;{3120DEA8-7060-40AC-AC7D-035477045FA5}|Bayer.Ultra.BSL.Medical.dll;{3FAB94D0-B31B-44BE-A072-3085B53F607E}|Bayer.Ultra.BSL.Excel.dll;{8F630735-EF0B-47A2-9021-FB121A21896B}|Bayer.Ultra.BSL.Report.dll;{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}|Bayer.Ultra.BSL.Configuration.dll;{1a7a229f-873f-4d79-8f0a-f3ef96ba4571}|Bayer.Ultra.BSL.Approval.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ultra-svc"
+		Debug.AspNetCompiler.PhysicalPath = "11.Wcf\ultra-svc\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ultra-svc\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ultra-svc"
+		Release.AspNetCompiler.PhysicalPath = "11.Wcf\ultra-svc\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ultra-svc\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "11.Wcf\ultra-svc\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571} = {1A7A229F-873F-4D79-8F0A-F3EF96BA4571}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "80.Test", "80.Test", "{00530362-8F42-4F66-B16B-F93C8EBCD6FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Framework.Test", "80.Test\Bayer.Ultra.Framework.Test\Bayer.Ultra.Framework.Test.csproj", "{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.BusinessLayer", "03.BusinessLayer", "{BBA2C304-D0CF-4983-B9D8-1E35E4828892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.BSL.Common", "03.BusinessLayer\Bayer.Ultra.BSL.Common\Bayer.Ultra.BSL.Common.csproj", "{D43BD142-6CC0-4675-B27E-08CC2E14212F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.WebBase", "04.WebBase\Bayer.Ultra.WebBase\Bayer.Ultra.WebBase.csproj", "{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.WcfBase", "04.WebBase\Bayer.Ultra.WcfBase\Bayer.Ultra.WcfBase.csproj", "{B70C6B39-7F89-4699-9D14-D78FF59970C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Framework.Common", "02.Com\Bayer.Ultra.Framework.Common\Bayer.Ultra.Framework.Common.csproj", "{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.BSL.Configuration", "03.BusinessLayer\Bayer.Ultra.BSL.Configuration\Bayer.Ultra.BSL.Configuration.csproj", "{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.BSL.Medical", "03.BusinessLayer\Bayer.Ultra.BSL.Medical\Bayer.Ultra.BSL.Medical.csproj", "{3120DEA8-7060-40AC-AC7D-035477045FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.BSL.Excel", "03.BusinessLayer\Bayer.Ultra.BSL.Excel\Bayer.Ultra.BSL.Excel\Bayer.Ultra.BSL.Excel.csproj", "{3FAB94D0-B31B-44BE-A072-3085B53F607E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.BSL.Excel.Test", "80.Test\Bayer.Ultra.BSL.Excel.Test\Bayer.Ultra.BSL.Excel.Test.csproj", "{CF01FC96-586A-4CC0-838D-84BF8B908F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.BSL.Report", "03.BusinessLayer\Bayer.Ultra.BSL.Report\Bayer.Ultra.BSL.Report.csproj", "{8F630735-EF0B-47A2-9021-FB121A21896B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Agent.SendMailAgent_original", "20.WinApp\SendMailAgent\Bayer.Ultra.Agent.SendMailAgent_original.csproj", "{1784693D-A03C-4053-842E-A41D60F7E3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Agent.SendMailAgent_sftp", "20.WinApp\SendMailAgent_sftp\Bayer.Ultra.Agent.SendMailAgent_sftp.csproj", "{18544A75-AA14-4940-8BF0-D8DF66ED6B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.BSL.Approval", "03.BusinessLayer\Bayer.Ultra.BSL.Approval\Bayer.Ultra.BSL.Approval.csproj", "{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Debug|x64.Build.0 = Debug|Any CPU
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Release|x64.ActiveCfg = Debug|Any CPU
+		{957077B3-1FF4-4741-A28E-A947B111FB34}.Release|x64.Build.0 = Debug|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Debug|x64.Build.0 = Debug|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Release|x64.ActiveCfg = Release|Any CPU
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF}.Release|x64.Build.0 = Release|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Debug|x64.Build.0 = Debug|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Release|x64.ActiveCfg = Release|Any CPU
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C}.Release|x64.Build.0 = Release|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Debug|x64.Build.0 = Debug|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Release|x64.ActiveCfg = Release|Any CPU
+		{970DD99E-A747-45FA-8550-683CE39BDE7B}.Release|x64.Build.0 = Release|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Debug|x64.Build.0 = Debug|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Release|x64.ActiveCfg = Debug|Any CPU
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0}.Release|x64.Build.0 = Debug|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Debug|x64.Build.0 = Debug|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Release|x64.ActiveCfg = Release|Any CPU
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36}.Release|x64.Build.0 = Release|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Debug|x64.Build.0 = Debug|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Release|x64.ActiveCfg = Release|Any CPU
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F}.Release|x64.Build.0 = Release|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Debug|x64.Build.0 = Debug|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}.Release|x64.Build.0 = Release|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Debug|x64.Build.0 = Debug|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Release|x64.ActiveCfg = Release|Any CPU
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1}.Release|x64.Build.0 = Release|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Debug|x64.Build.0 = Debug|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Release|x64.ActiveCfg = Release|Any CPU
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}.Release|x64.Build.0 = Release|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Debug|x64.Build.0 = Debug|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Release|x64.ActiveCfg = Release|Any CPU
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}.Release|x64.Build.0 = Release|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Debug|x64.Build.0 = Debug|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Release|x64.ActiveCfg = Release|Any CPU
+		{3120DEA8-7060-40AC-AC7D-035477045FA5}.Release|x64.Build.0 = Release|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Debug|x64.Build.0 = Debug|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Release|x64.ActiveCfg = Release|Any CPU
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E}.Release|x64.Build.0 = Release|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Debug|x64.Build.0 = Debug|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Release|x64.ActiveCfg = Release|Any CPU
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62}.Release|x64.Build.0 = Release|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Debug|x64.Build.0 = Debug|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Release|x64.ActiveCfg = Release|Any CPU
+		{8F630735-EF0B-47A2-9021-FB121A21896B}.Release|x64.Build.0 = Release|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|x64.ActiveCfg = Debug|x64
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|x64.Build.0 = Debug|x64
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|x64.ActiveCfg = Release|x64
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|x64.Build.0 = Release|x64
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Debug|x64.ActiveCfg = Debug|x64
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Debug|x64.Build.0 = Debug|x64
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Release|x64.ActiveCfg = Release|x64
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52}.Release|x64.Build.0 = Release|x64
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Debug|x64.Build.0 = Debug|Any CPU
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Release|x64.ActiveCfg = Release|Any CPU
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{957077B3-1FF4-4741-A28E-A947B111FB34} = {FAB139CD-6F9E-4FE1-8F61-8A47C77862A7}
+		{4DA5A06D-C707-476D-A6CA-543265EED5EF} = {330053CB-2BB8-4E16-B7C4-70925674FA79}
+		{42B67805-4E8A-4F99-ACB8-422F4D987A3C} = {BBD49C74-3659-47C4-9D7D-D5763CBDD496}
+		{970DD99E-A747-45FA-8550-683CE39BDE7B} = {330053CB-2BB8-4E16-B7C4-70925674FA79}
+		{4E654859-FBC1-462E-A9BB-B667AC4B43D0} = {6BC7057A-C0A8-48F1-AFE4-A8B7D03AEF8E}
+		{075EB272-2E06-4FE5-A7AA-CF15ADF9BF36} = {00530362-8F42-4F66-B16B-F93C8EBCD6FC}
+		{D43BD142-6CC0-4675-B27E-08CC2E14212F} = {BBA2C304-D0CF-4983-B9D8-1E35E4828892}
+		{E5EDC922-FC49-4616-B712-ADFA5B78A2ED} = {917BECA6-F6E6-40E9-A974-D09B0D47A3FF}
+		{B70C6B39-7F89-4699-9D14-D78FF59970C1} = {917BECA6-F6E6-40E9-A974-D09B0D47A3FF}
+		{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7} = {330053CB-2BB8-4E16-B7C4-70925674FA79}
+		{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F} = {BBA2C304-D0CF-4983-B9D8-1E35E4828892}
+		{3120DEA8-7060-40AC-AC7D-035477045FA5} = {BBA2C304-D0CF-4983-B9D8-1E35E4828892}
+		{3FAB94D0-B31B-44BE-A072-3085B53F607E} = {BBA2C304-D0CF-4983-B9D8-1E35E4828892}
+		{CF01FC96-586A-4CC0-838D-84BF8B908F62} = {00530362-8F42-4F66-B16B-F93C8EBCD6FC}
+		{8F630735-EF0B-47A2-9021-FB121A21896B} = {BBA2C304-D0CF-4983-B9D8-1E35E4828892}
+		{1784693D-A03C-4053-842E-A41D60F7E3DF} = {3A7D6B62-F796-401B-8F55-8D03642884F6}
+		{18544A75-AA14-4940-8BF0-D8DF66ED6B52} = {3A7D6B62-F796-401B-8F55-8D03642884F6}
+		{1A7A229F-873F-4D79-8F0A-F3EF96BA4571} = {BBA2C304-D0CF-4983-B9D8-1E35E4828892}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {567B6071-A88B-4768-9263-1102337364F8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 18
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.43.48.17:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = http://localhost:4042/ultra
+		SccProjectTopLevelParentUniqueName1 = Ultra.sln
+		SccProjectName1 = 10.Web/ultra
+		SccLocalPath1 = 10.Web\\ultra
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = 02.Com\\Bayer.Ultra.Framework\\Bayer.Ultra.Framework.csproj
+		SccProjectTopLevelParentUniqueName2 = Ultra.sln
+		SccProjectName2 = 02.Com/Bayer.Ultra.Framework
+		SccLocalPath2 = 02.Com\\Bayer.Ultra.Framework
+		SccProjectUniqueName3 = 01.Core\\Bayer.Ultra.Core\\Bayer.Ultra.Core.csproj
+		SccProjectTopLevelParentUniqueName3 = Ultra.sln
+		SccProjectName3 = 01.Core/Bayer.Ultra.Core
+		SccLocalPath3 = 01.Core\\Bayer.Ultra.Core
+		SccProjectUniqueName4 = 02.Com\\Bayer.Ultra.Framework.Database\\Bayer.Ultra.Framework.Database.csproj
+		SccProjectTopLevelParentUniqueName4 = Ultra.sln
+		SccProjectName4 = 02.Com/Bayer.Ultra.Framework.Database
+		SccLocalPath4 = 02.Com\\Bayer.Ultra.Framework.Database
+		SccWebProject5 = true
+		SccProjectUniqueName5 = http://localhost:4042/ultra-svc
+		SccProjectTopLevelParentUniqueName5 = Ultra.sln
+		SccProjectName5 = 11.Wcf/ultra-svc
+		SccLocalPath5 = 11.Wcf\\ultra-svc
+		SccProjectEnlistmentChoice5 = 2
+		SccProjectUniqueName6 = 80.Test\\Bayer.Ultra.Framework.Test\\Bayer.Ultra.Framework.Test.csproj
+		SccProjectTopLevelParentUniqueName6 = Ultra.sln
+		SccProjectName6 = 80.Test/Bayer.Ultra.Framework.Test
+		SccLocalPath6 = 80.Test\\Bayer.Ultra.Framework.Test
+		SccProjectUniqueName7 = 03.BusinessLayer\\Bayer.Ultra.BSL.Common\\Bayer.Ultra.BSL.Common.csproj
+		SccProjectTopLevelParentUniqueName7 = Ultra.sln
+		SccProjectName7 = 03.BusinessLayer/Bayer.Ultra.BSL.Common
+		SccLocalPath7 = 03.BusinessLayer\\Bayer.Ultra.BSL.Common
+		SccProjectUniqueName8 = 04.WebBase\\Bayer.Ultra.WebBase\\Bayer.Ultra.WebBase.csproj
+		SccProjectTopLevelParentUniqueName8 = Ultra.sln
+		SccProjectName8 = 04.WebBase/Bayer.Ultra.WebBase
+		SccLocalPath8 = 04.WebBase\\Bayer.Ultra.WebBase
+		SccProjectUniqueName9 = 04.WebBase\\Bayer.Ultra.WcfBase\\Bayer.Ultra.WcfBase.csproj
+		SccProjectTopLevelParentUniqueName9 = Ultra.sln
+		SccProjectName9 = 04.WebBase/Bayer.Ultra.WcfBase
+		SccLocalPath9 = 04.WebBase\\Bayer.Ultra.WcfBase
+		SccProjectUniqueName10 = 02.Com\\Bayer.Ultra.Framework.Common\\Bayer.Ultra.Framework.Common.csproj
+		SccProjectTopLevelParentUniqueName10 = Ultra.sln
+		SccProjectName10 = 02.Com/Bayer.Ultra.Framework.Common
+		SccLocalPath10 = 02.Com\\Bayer.Ultra.Framework.Common
+		SccProjectUniqueName11 = 03.BusinessLayer\\Bayer.Ultra.BSL.Configuration\\Bayer.Ultra.BSL.Configuration.csproj
+		SccProjectTopLevelParentUniqueName11 = Ultra.sln
+		SccProjectName11 = 03.BusinessLayer/Bayer.Ultra.BSL.Configuration
+		SccLocalPath11 = 03.BusinessLayer\\Bayer.Ultra.BSL.Configuration
+		SccProjectUniqueName12 = 03.BusinessLayer\\Bayer.Ultra.BSL.Medical\\Bayer.Ultra.BSL.Medical.csproj
+		SccProjectTopLevelParentUniqueName12 = Ultra.sln
+		SccProjectName12 = 03.BusinessLayer/Bayer.Ultra.BSL.Medical
+		SccLocalPath12 = 03.BusinessLayer\\Bayer.Ultra.BSL.Medical
+		SccProjectUniqueName13 = 03.BusinessLayer\\Bayer.Ultra.BSL.Excel\\Bayer.Ultra.BSL.Excel\\Bayer.Ultra.BSL.Excel.csproj
+		SccProjectTopLevelParentUniqueName13 = Ultra.sln
+		SccProjectName13 = 03.BusinessLayer/Bayer.Ultra.BSL.Excel/Bayer.Ultra.BSL.Excel
+		SccLocalPath13 = 03.BusinessLayer\\Bayer.Ultra.BSL.Excel\\Bayer.Ultra.BSL.Excel
+		SccProjectUniqueName14 = 80.Test\\Bayer.Ultra.BSL.Excel.Test\\Bayer.Ultra.BSL.Excel.Test.csproj
+		SccProjectTopLevelParentUniqueName14 = Ultra.sln
+		SccProjectName14 = 80.Test/Bayer.Ultra.BSL.Excel.Test
+		SccLocalPath14 = 80.Test\\Bayer.Ultra.BSL.Excel.Test
+		SccProjectUniqueName15 = 03.BusinessLayer\\Bayer.Ultra.BSL.Report\\Bayer.Ultra.BSL.Report.csproj
+		SccProjectTopLevelParentUniqueName15 = Ultra.sln
+		SccProjectName15 = 03.BusinessLayer/Bayer.Ultra.BSL.Report
+		SccLocalPath15 = 03.BusinessLayer\\Bayer.Ultra.BSL.Report
+		SccProjectUniqueName16 = 20.WinApp\\SendMailAgent\\Bayer.Ultra.Agent.SendMailAgent_original.csproj
+		SccProjectTopLevelParentUniqueName16 = Ultra.sln
+		SccProjectName16 = 20.WinApp/SendMailAgent
+		SccLocalPath16 = 20.WinApp\\SendMailAgent
+		SccProjectUniqueName17 = 03.BusinessLayer\\Bayer.Ultra.BSL.Approval\\Bayer.Ultra.BSL.Approval.csproj
+		SccProjectTopLevelParentUniqueName17 = Ultra.sln
+		SccProjectName17 = 03.BusinessLayer/Bayer.Ultra.BSL.Approval
+		SccLocalPath17 = 03.BusinessLayer\\Bayer.Ultra.BSL.Approval
+	EndGlobalSection
+EndGlobal

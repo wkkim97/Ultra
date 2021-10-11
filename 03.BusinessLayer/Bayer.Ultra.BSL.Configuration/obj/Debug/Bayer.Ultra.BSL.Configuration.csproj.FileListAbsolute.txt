@@ -1,0 +1,15 @@
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.BSL.Configuration.dll
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.BSL.Configuration.pdb
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.Framework.Common.dll
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.Framework.Database.dll
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\EntityFramework.dll
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\EntityFramework.SqlServer.dll
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.Framework.dll
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.Framework.Common.pdb
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.Framework.Database.pdb
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\bin\Debug\Bayer.Ultra.Framework.pdb
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\obj\Debug\Bayer.Ultra.BSL.Configuration.csproj.CopyComplete
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\obj\Debug\Bayer.Ultra.BSL.Configuration.dll
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\obj\Debug\Bayer.Ultra.BSL.Configuration.pdb
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\obj\Debug\Bayer.Ultra.BSL.Configuration.csproj.AssemblyReference.cache
+C:\Temp\ultra\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\obj\Debug\Bayer.Ultra.BSL.Configuration.csproj.CoreCompileInputs.cache

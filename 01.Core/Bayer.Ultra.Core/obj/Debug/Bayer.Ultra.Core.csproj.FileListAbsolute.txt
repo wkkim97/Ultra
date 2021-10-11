@@ -1,0 +1,6 @@
+C:\Temp\ultra\01.Core\Bayer.Ultra.Core\bin\Debug\Bayer.Ultra.Core.dll
+C:\Temp\ultra\01.Core\Bayer.Ultra.Core\bin\Debug\Bayer.Ultra.Core.pdb
+C:\Temp\ultra\01.Core\Bayer.Ultra.Core\obj\Debug\Bayer.Ultra.Core.dll
+C:\Temp\ultra\01.Core\Bayer.Ultra.Core\obj\Debug\Bayer.Ultra.Core.pdb
+C:\Temp\ultra\01.Core\Bayer.Ultra.Core\obj\Debug\Bayer.Ultra.Core.csproj.CoreCompileInputs.cache
+C:\Temp\ultra\01.Core\Bayer.Ultra.Core\obj\Debug\Bayer.Ultra.Core.csproj.AssemblyReference.cache

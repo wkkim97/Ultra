@@ -1,0 +1,13 @@
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\Bayer.Ultra.Framework.Database.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\Bayer.Ultra.Framework.Database.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\Bayer.Ultra.Core.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\Bayer.Ultra.Framework.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\EntityFramework.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\Bayer.Ultra.Core.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\bin\Debug\Bayer.Ultra.Framework.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\obj\Debug\Bayer.Ultra.Framework.Database.csproj.CopyComplete
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\obj\Debug\Bayer.Ultra.Framework.Database.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\obj\Debug\Bayer.Ultra.Framework.Database.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\obj\Debug\Bayer.Ultra.Framework.Database.csproj.AssemblyReference.cache
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Database\obj\Debug\Bayer.Ultra.Framework.Database.csproj.CoreCompileInputs.cache

@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mailinfo>
+  <Items>
+    <Item MailSendType="CurrentApprover" ToComment="Requester|Approver" CcComment="Request when Requester">  
+      <Subject><![CDATA[[UlTra] Waiting for your action({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+   
+			 Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+       
+       Please find enclosed a link to a document in<strong>UlTra</strong>
+			  and be so kind to verify (Approval or Reject) it as quickly as possible.<br/><br/> 
+       {COMMENT}
+       <br/>
+       <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a>
+			  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 10px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="FinalApproval" ToComment="Requester" CcComment="Reviewer, Recipient"  >   
+      <Subject><![CDATA[[UlTra] Approved your document({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+  Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+  Your document in<strong>UlTra</strong> was approved.<br/><br/>
+  <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font> 
+  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Reject" ToComment="Requester">  
+      <Subject><![CDATA[[UlTra] Rejected your document({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+  Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+  Your document in <strong>UlTra</strong> was rejected.<br/><br/>
+  Reason : {COMMENT}<br/>
+  <br/>
+  <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font> 
+  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Canceled" ToComment="결제자, Recipient, Reviewer">
+      <Subject><![CDATA[[UlTra] Canceled this document("{DOC_SUBJECT}")]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+  Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+   Your document in <strong>UlTra</strong> was canceled.<br/><br/>
+   <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font> 
+    <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Forward" ToComment="Forwardedperson">  
+      <Subject><![CDATA[[UlTra] Forwarded this document ({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+  Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+   Your document in <strong>UlTra</strong>was forwarded.<br/><br/>
+   <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font> 
+   <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item> 
+    <Item MailSendType="Withdraw" ToComment="Requester" CcComment="Approver|Reviewer" > 
+      <Subject><![CDATA[[UlTra] The document was withdrawn({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+   Dear Sir or Madam<br/><br/>
+   This document was withdrawn.<br/><br>
+   Comment : {COMMENT}<br/>
+   <br/>
+    <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a><br/> 
+    <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Remind" ToComment="CurrentApprover"> 
+      <Subject><![CDATA[[UlTra] Waiting for your action ({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+ Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+ Please find enclosed a link to an<string>UlTra</strong>,and be so kind to verify (Approval or Reject) it as quickly as possible.
+ <br/><br/> 
+ <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font>
+  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+]]>
+      </Body>
+    </Item> 
+    <Item MailSendType="FinalApprovalRecipient" ToComment="Recipient|Reviewer"> 
+      <Subject><![CDATA[[UlTra]-Information : The document is approved ({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+ Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+ The document was approved. <br/><br/> 
+ <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font>
+  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+          ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="InputComment" ToComment="Requester|Recipient|Reviewer"> 
+      <Subject><![CDATA[[UlTra] Saved the comment in the document({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+ Dear <strong>  All</strong><br/><br/>
+ The comment was inputted in the document in <strong>UlTra</strong>.<br/><br/> 
+         Comment :  {COMMENT}
+        <br/><br>
+        <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font>
+  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Violation" ToComment="Recipient">
+      <Subject><![CDATA[[UlTra] 4 Count Violation (계획 또는 완료된 Event 에서 5회 이상 방문 HCP 발견)]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+			  안녕하세요.<br/><br/>
+        아래의 고객은 이미 4회의 방문이 계획 또는 완료된 고객입니다.<br/>
+			  <strong>CRM system</strong> 에서 계획을 변경하시기 바랍니다.<br/> 
+        {VIOLATION_ITEMS}
+        <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Violation" ToComment="Recipient">
+      <Subject><![CDATA[[UlTra] 4 Count Violation (계획 또는 완료된 Event 에서 5회 이상 방문 HCP 발견)]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+  안녕하세요.<br/><br/>
+  아래의 고객은 이미 4회의 방문이 계획 또는 완료된 고객입니다.<br/>
+  <strong>CRM system</strong> 에서 계획을 변경하시기 바랍니다.<br/>
+  {VIOLATION_ITEMS}<br/><br/>
+  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Interface" ToComment="Recipient">
+      <Subject><![CDATA[[Ultra Interface] Stored Procedure Result]]></Subject>
+      <Body>
+        <![CDATA[
+              ISP_CRM_PARTICIPANTS_PROVISIONING Stored Procedure 실행 결과<br/>
+              <br/>
+              {INTERFACE_ITEMS}
+              <br/>  
+              <br/>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="Delegation" ToComment="Delegation 받는 사람" CcComment="Requester">
+      <Subject><![CDATA[[UlTra] Delegated for adding participants in Event ({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+			 Dear <strong>  All</strong><br/><br/>
+              This document in<strong>UlTra</strong> was delegated.<br/>
+             
+              <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a></font>
+
+			  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+  <Item MailSendType="DelayApproval" ToComment="Approver">
+      <Subject><![CDATA[[UlTra] Waiting for your action({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+            
+  Dear {DEAR_NAME}<br/><br/>
+    Please find enclosed a link to a document in <strong>UlTra</strong>,and be so kind to verify (Approval or Reject) it as quickly as possible.
+    <br/><br/> 
+    Requester : {REQUESTER}<br/>
+    Event Name : {EVENT_NAME}<br/>
+    Request Date : {REQUEST_DATE}<br/>
+    <br/>
+    <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a><br/><br/>
+    <br/>
+			  <br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+
+      ]]>
+      </Body>
+    </Item>
+
+    <Item MailSendType="DelayEventComplete" ToComment="Approver">
+      <Subject><![CDATA[[UlTra] Event Complete 수행 요청 안내({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+            Dear <strong>{DEAR_NAME}</strong><br/>
+              <br/>
+              아래 행사 종료 이후 30일 이상 경과 하였습니다.<br/>
+              참석자 상태 등의 정보를 확인하고 [EVENT COMPLETE]를 수행하시기 바랍니다.<br/>
+                ※	이후에는 문서 수정이 불가능하므로 신중을 기해주시기 바랍니다.<br/>
+              <br/> 
+              Requester : {REQUESTER}<br/>
+              Event Name : {EVENT_NAME}<br/>
+              Request Date : {REQUEST_DATE}<br/>
+              <br/>
+              <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a><br/><br/>
+              <br/>
+              </font>
+			  <br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="DelayPaymentComplete" ToComment="Approver">
+      <Subject><![CDATA[[UlTra] Payment Complete 수행 요청 안내({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+  Dear <strong>{DEAR_NAME}</srong><br/>
+              <br/>
+              아래 행사는 [EVENT COMPLETE] 이후 60일 이상 경과하였습니다.<br/>
+              각 정산 시스템 별 지출 비용을 최종 확인하고 [PAYMENT COMPLETE]를 수행하시기 바랍니다<br/>
+                ※	Payment Complete 이후에 지출 비용이 추가 또는 변경되는 경우, Payment Complete을 다시 진행해주셔야 합니다.
+              <br/><br/> 
+              Requester : {REQUESTER}<br/>
+              Event Name : {EVENT_NAME}<br/>
+              Request Date : {REQUEST_DATE}<br/>
+              <br/>
+              <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a><br/><br/>
+              <br/>
+              </font>
+			  <br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 5px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="ReportNonOnekey" ToComment="Approver">
+      <Subject><![CDATA[[UlTra] Non Onekey data {STATUS}]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+   
+			 Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+       
+       {COMMENT}
+       <br/>
+       <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a>
+			  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 10px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="RegistNonOnekey" ToComment="Approver">
+      <Subject><![CDATA[[Bayer] Non Onekey data {STATUS}]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+   
+			 Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+       
+       아래 Non One-key data의 업로드를 요청드립니다.<br><br>
+       {COMMENT}
+       <br/>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    
+    <Item MailSendType="ReportHCPInquiry" ToComment="Approver">
+      <Subject><![CDATA[[UlTra] HCP document requset {STATUS}]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+   
+			 Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+       
+       {COMMENT}
+       <br/>
+       <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a>
+			  <br/><br/>
+  <div style="width: 100%;  border: 1 solid rgba(103,103,103,1);color:rgba(103,103,103,1);border-radius : 10px; padding:8px;">
+  If you have any technical problem, please do not hesitate to contact us<br/><br>			
+  <Strong>IT ServiceDesk</Strong><br><br>
+  Contact E-Mail : <strong>itservicedesk@bayer.com</strong> <br>
+               Contact Number : <strong>#6262, 080-300-6262</strong> <br/>
+  </div>
+  <br>
+  <font style="font-size:20px; font-weight:bold;color:rgba(0,144,197,1);">UlTra</font><br>
+  <font style="font-size:12px; font-style:italic; color:rgba(0,144,197,1);"> Ultimate Tranasparency/Tracking System</font>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    <Item MailSendType="RegistHCPInquiry" ToComment="Approver">
+      <Subject><![CDATA[[Bayer] HCP document request {STATUS}]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+   
+			 Dear <Strong>{DEAR_NAME}</strong><br/><br/>
+       
+       아래 HCP document의 발송을 요청드립니다.<br><br>
+       {COMMENT}
+       <br/>
+       <a href="{DOC_HREF}" onclick="window.open(this.href, '', 'width=935px, height=680px, top=10px, left=10px,location=no,titlebar=no,status=no,scrollbars=yes,menubar=no,toolbar=no,directories=no,resizable=no,copyhistory=no'); return false;">Document Link</a>
+			  <br/><br/>
+</div>
+      ]]>
+      </Body>
+    </Item>
+    
+    <Item MailSendType="VeevaConsent" ToComment="Consent">
+      <Subject><![CDATA[[Veeva-필독] Veeva 동의서 수집 관련({DOC_SUBJECT})]]></Subject>
+      <Body>
+        <![CDATA[ 
+<div style="font-family:'Malgun Gothic','맑은 고딕';font-size:14px">
+            Dear <strong>{DEAR_NAME}</strong><br/>
+              <br/>
+              해당 메일은 고객 이메일 수집 시에 세 가지 필수 동의(개인정보 수집 및 이용 동의 / 마케팅 정보 수신 동의 / 제3자 및 국외 이전 동의) 항목 중 하나 이상의 누락이 확인되어 발송된 메일입니다.<br/>
+              아래 고객의 동의 수집 내용을 확인하신 후, 모두 체크하고 고객 사인을 다시 받아 주시기 바랍니다.
+
+
+              <br/> 
+              <b>{EVENT_NAME}</b>
+              <br/><br/>
+              
+              <font style="color:red">개인정보 보호법에 의해</font>,
+               세 개 항목 중 하나라도 동의가 누락된 고객에게 Approved Email을 발송하는 경우, 회사는 최대 3천만원까지 과태료 처분을 받을 수 있습니다.<br/>
+              관련하여 문의하실 내용이 있다면 <b>SFE팀으로 연락 주시기 바랍니다.</b><br/>
+
+             
+			  <br/>
+  
+</div>
+
+      ]]>
+      </Body>
+    </Item>
+  </Items>
+</Mailinfo>

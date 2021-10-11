@@ -1,0 +1,11 @@
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\bin\Debug\Bayer.Ultra.Framework.Common.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\bin\Debug\Bayer.Ultra.Framework.Common.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\bin\Debug\Bayer.Ultra.Core.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\bin\Debug\Bayer.Ultra.Framework.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\bin\Debug\Bayer.Ultra.Core.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\bin\Debug\Bayer.Ultra.Framework.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\obj\Debug\Bayer.Ultra.Framework.Common.csproj.CopyComplete
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\obj\Debug\Bayer.Ultra.Framework.Common.dll
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\obj\Debug\Bayer.Ultra.Framework.Common.pdb
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\obj\Debug\Bayer.Ultra.Framework.Common.csproj.AssemblyReference.cache
+C:\Temp\ultra\02.Com\Bayer.Ultra.Framework.Common\obj\Debug\Bayer.Ultra.Framework.Common.csproj.CoreCompileInputs.cache

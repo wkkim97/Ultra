@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Ultra_Admin.master.cs" Inherits="Master_Ultra_Admin" %>
+
+<%@ Register Src="~/Common/Controls/LayerInformation.ascx" TagPrefix="uc1" TagName="LayerInformation" %>
+<%@ Register Src="~/Common/Controls/LayerError.ascx" TagPrefix="uc1" TagName="LayerError" %>
+<%@ Register Src="~/Common/Controls/LayerAlert.ascx" TagPrefix="uc1" TagName="LayerAlert" %>
+<%@ Register Src="~/Common/Controls/LayerWarning.ascx" TagPrefix="uc1" TagName="LayerWarning" %>
+ 
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <title>Ultra-Admin</title>
+    <link rel="shortcut icon" href="/ultra/Styles/images/favicon.ico" media="all" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="/ultra/Styles/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/ultra/Styles/JSGrid/jsgrid.css" />
+    <link rel="stylesheet" href="/ultra/Styles/JSGrid/jsgrid-theme-dn.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/Style.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Bootstrap/css/bootstrap-datetimepicker.css" />
+    <script type="text/javascript" src="/ultra/Scripts/JQuery/jquery-3.2.1.min.js"></script>
+    <link href="/ultra/Styles/waitMe/waitMe.css" rel="stylesheet" />
+    <script src="/ultra/Styles/waitMe/waitMe.js"></script>
+    <style type="text/css">
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("/ultra/Styles/images/loading.gif") 50% 50% no-repeat rgb(249,249,249);
+            opacity: .5;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="l_layout">
+    <form id="form1" runat="server">
+        <header id="header" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnableCdn="true" />
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="#">
+                        <img src="/ultra/Styles/images/logo.png" alt="Ultra" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="topFixedNavbar" role="navigation">
+                    <ul class="nav navbar-nav gnb">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UlTra User<span class="caret"></span></a>
+                            <ul id="ulUlTraUser" class="dropdown-menu" runat="server"></ul>
+                        </li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">System Admin<span class="caret"></span></a>
+                            <ul id="ulSystemAdmin" class="dropdown-menu" runat="server">
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Report<span class="caret"></span></a>
+                            <ul id="ulReport" class="dropdown-menu" runat="server">
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- // .gnb -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span id="spanUserName" runat="server">Wookyung Kim</span><span id="spanOrgName" class="visible-lg-inline" runat="server"> |  BKL-CFO-BS-IT-ITAW</span> <span class="ico_account"></span></a>
+                        </li>
+                    </ul>
+                    <!-- // .navbar-right -->
+                </div>
+            </div>
+        </header>
+        <div id="wrap" class="container">
+            <asp:ContentPlaceHolder ID="cpHolderContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <uc1:LayerInformation runat="server" ID="LayerInformation" />
+        <!-- // #layer_success -->
+
+        <uc1:LayerError runat="server" ID="LayerError" />
+        <!-- // #layer_error -->
+
+        <uc1:LayerAlert runat="server" ID="LayerAlert" />
+        <!-- // #layer_alert -->
+
+        <uc1:LayerWarning runat="server" ID="LayerWarning" />
+
+        <input type="hidden" id="hddUserID" runat="server" />
+    
+
+        <script type="text/javascript" src="/ultra/Styles/Bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/Bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/JSGrid/jsgrid.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Common/Common.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Pages/FormEvent.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/waitMe/waitMe.js"></script>
+        <asp:ContentPlaceHolder ID="cpHolderBottom" runat="server"></asp:ContentPlaceHolder>
+        <script type="text/javascript">
+
+            $(document).ajaxStart(function () {
+                $('body').waitMe({
+                    effect: 'win8',
+                    text: 'Loading...'
+                });
+            });
+
+            $(document).ajaxStop(function () {
+                $('body').waitMe('hide');
+            });
+        </script>
+    </form>
+</body>
+</html>

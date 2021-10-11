@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayer.Ultra.Agent.SendMailAgent", "Bayer.Ultra.Agent.SendMailAgent.csproj", "{1784693D-A03C-4053-842E-A41D60F7E3DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|x64.ActiveCfg = Debug|x64
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Debug|x64.Build.0 = Debug|x64
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|x64.ActiveCfg = Release|x64
+		{1784693D-A03C-4053-842E-A41D60F7E3DF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1638BCE-AE64-4714-895C-C58F12567131}
+	EndGlobalSection
+EndGlobal

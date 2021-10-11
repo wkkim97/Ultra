@@ -1,0 +1,63 @@
+﻿ 
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="/ultra/Styles/images/favicon.ico" media="all" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="/ultra/Styles/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/ultra/Styles/JSGrid/jsgrid.css" />
+    <link rel="stylesheet" href="/ultra/Styles/JSGrid/jsgrid-theme-dn.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Bootstrap/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/Style.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/jquery.fileupload.css" />
+
+    <script type="text/javascript" src="/ultra/Scripts/JQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/ultra/Styles/Bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/ultra/Styles/JSGrid/jsgrid.js"></script>
+    <script type="text/javascript" src="/ultra/Scripts/Pages/FormEvent.js"></script>
+    <script src="/ultra/Scripts/Common/Common.js"></script>
+ 
+    <style type="text/css">
+        .write tbody tr {
+            height: 30px;
+        }
+    </style>
+    <title></title>
+</head>
+<body style="background-color:#fff">
+    <form id="form1" runat="server">
+        <div id="wrap">
+            <div class="panel-topinfo">
+                <div class="panel-heading">
+                    <h1 class="panel-title">PMS Help</h1>
+                </div>
+                <div class="panel-body pd">
+                    <ol>
+                        <li><B>Contract no.</B> : IMPACT no.-Site no.-계약 차수 (예시, 16560-001-01 : 16560연구의 01번 기관의 최초 계약), 변경 계약 시 순차적으로 02, 03…N으로 기재합니다. 가운데 Site no. 는 꼭 3자리로 입력해주시고, Non-IRB 기관일 경우 N을 기재해주세요. (e.g. “N01”)</li>
+                        <li><B>재심사</B> : Regulatory PMS는 Yes로,  그 외 OS/NIS는 No 로 기재합니다.</li>
+                        <li><B>제품코드</B> :  재심사 시행을 요청하는 식약처 공문에 명시되어있는 “품목(용량)”으로 검색한 결과 중 대표코드 번호로 기재합니다.  (예, 자렐토의 경우, 허가공문에 자렐토 10mg으로 명시되어있음.)</li>
+                        <li><B>단가/건</B> :  Initial visit/Follow up visit 별 단가로 기재하며 ‘정수’로 기재합니다. (소수점 안됨) </li>
+                        <li><B>건수</B> : Initial visit/Follow up visit 횟수로 기재합니다. </li>
+                        <li><B>지급비용</B> : 자동 계산되며, 실제 지급된 비용과 차이가 있을 수 있습니다. 차이가 나는 사유에 대하여는 10.comment에 기재합니다.  </li>
+                        <li><B>비용지급일자</B> : Controlling 팀에서 제공한 Posting date로 기재합니다. </li>
+                        <li><B>비용지급 방법</B> : SRM으로 처리한 청구용 건은 PO(SRM)으로, Your-Doces로 처리한 영수용 건은 Non-PO로 기재합니다. </li>
+                        <li><B>Evidence no.</B> : SRM으로 처리한 것은 PO 번호로, Your-Doces로 처리한 건은 Settlement의 Barcode no.로 기재합니다.</li>
+                        <li>
+                            <B>Comment</B> :
+                            단가/건, 건수의 단위는 입력된 Visit(방문 페이지) 기준이며, 간접비 포함된 금액을 건수로 나누어 기재하여 실제 지급된 actual 금액 (_______원)과 차이가 있음<BR />
+                            <br />
+                            <B>[Payment Condition]</B> Patient 1명 당 최대 30만원으로 산정됨 / 최초방문 입력완료 시 (100,000원) / 추적방문 입력완료 시 (50,000원): 추적방문은 최대 4회까지만 가능함 / 선정제외기준 탈락된 대상자는 비용지급 불가 <BR />
+                            <B>[지급내역]</B> 3차 연구비:  총  4명에서 20번의 추적방문이 완료되어  20번 방문 * 50,000원 =1,000,000원 지급됨 / 직접비 (1,000,000원) + 병원 간접비(100,000)원으로 총 1,100,000원 지급됨
+                        </li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

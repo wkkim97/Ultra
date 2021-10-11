@@ -1,0 +1,6 @@
+2018-01-18 10:10:58 - 
+2018-01-18 10:10:58 - SendNoticeMail - 기준 날짜 계산....
+2018-01-18 10:10:58 - SendNoticeMail - 웹서비스 실행..../BasicDate = 2018-01-15
+2018-01-18 10:10:58 - SendNoticeMail - 발송항목 정보 = basicdate : 2018-01-15 / url : http://localhost/ultra-svc/UltraCommon.svc/SendNoticeMail/DelayApproval/2018-01-15
+2018-01-18 10:11:04 - SendNoticeMail.WcfSvc - 메일 발송 완료....
+2018-01-18 10:11:04 - SendNoticeMail - 장기간 미 결재자 목록 완료..../DayOfWeek = Thursday

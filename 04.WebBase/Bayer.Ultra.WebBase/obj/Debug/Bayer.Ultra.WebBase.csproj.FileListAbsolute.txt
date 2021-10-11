@@ -1,0 +1,14 @@
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.WebBase.dll
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.WebBase.pdb
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.Core.dll
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.Framework.Common.dll
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.Framework.dll
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Newtonsoft.Json.dll
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.Core.pdb
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.Framework.Common.pdb
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\bin\Debug\Bayer.Ultra.Framework.pdb
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\obj\Debug\Bayer.Ultra.WebBase.csproj.CopyComplete
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\obj\Debug\Bayer.Ultra.WebBase.dll
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\obj\Debug\Bayer.Ultra.WebBase.pdb
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\obj\Debug\Bayer.Ultra.WebBase.csproj.CoreCompileInputs.cache
+C:\Temp\ultra\04.WebBase\Bayer.Ultra.WebBase\obj\Debug\Bayer.Ultra.WebBase.csproj.AssemblyReference.cache

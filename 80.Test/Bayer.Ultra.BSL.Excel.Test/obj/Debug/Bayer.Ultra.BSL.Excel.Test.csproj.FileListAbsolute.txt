@@ -1,0 +1,14 @@
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.BSL.Excel.Test.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.BSL.Excel.Test.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.BSL.Excel.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.Framework.Common.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.Framework.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.Framework.Common.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.BSL.Excel.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\bin\Debug\Bayer.Ultra.Framework.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\obj\Debug\Bayer.Ultra.BSL.Excel.Test.csproj.CopyComplete
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\obj\Debug\Bayer.Ultra.BSL.Excel.Test.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\obj\Debug\Bayer.Ultra.BSL.Excel.Test.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\obj\Debug\Bayer.Ultra.BSL.Excel.Test.csproj.AssemblyReference.cache
+C:\Temp\ultra\80.Test\Bayer.Ultra.BSL.Excel.Test\obj\Debug\Bayer.Ultra.BSL.Excel.Test.csproj.CoreCompileInputs.cache

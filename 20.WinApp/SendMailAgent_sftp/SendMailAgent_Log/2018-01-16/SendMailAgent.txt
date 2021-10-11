@@ -1,0 +1,22 @@
+2018-01-16 10:10:30 - 
+2018-01-16 10:10:31 - SendNoticeMail - 기준 날짜 계산....
+2018-01-16 10:10:31 - SendNoticeMail - 웹서비스 실행..../BasicDate = 2018-01-11
+2018-01-16 10:10:31 - SendNoticeMail - 발송항목 정보 = basicdate : 2018-01-11 / url : http://localhost/ultra-svc/UltraCommon.svc/SendNoticeMail/DelayApproval/2018-01-11
+2018-01-16 10:10:31 - SendNoticeMail.WcfSvc - 메일 발송 완료....
+2018-01-16 10:10:31 - SendNoticeMail - 장기간 미 결재자 목록 완료..../DayOfWeek = Tuesday
+2018-01-16 10:57:56 - =================================================
+2018-01-16 10:57:56 - =================================================
+2018-01-16 10:57:56 - Interval : 5
+2018-01-16 10:57:56 - DailyTime : 10:10:00
+2018-01-16 10:57:56 - LogWriteYN : Y
+2018-01-16 10:57:56 - basicdate : 3
+2018-01-16 10:57:56 - LogFilePath : D:\Ultra-Dev\20.WinApp\SendMailAgent\SendMailAgent_Log
+2018-01-16 10:57:56 - smtpServer : exsmtp.de.bayer.cnb
+2018-01-16 10:57:56 - mailDomain : naver.com
+2018-01-16 10:57:56 - sender : ultra_kr@bayer.com
+2018-01-16 10:57:56 - senderps : oDRbIXLTkq9PSvIoMsUhcg==
+2018-01-16 10:57:56 - eventUrl : http://localhost/Ultra/Pages/Event/
+2018-01-16 10:57:56 - serviceUrl : http://localhost/ultra-svc/UltraCommon.svc
+2018-01-16 10:57:56 - mailFormat : D:\Ultra-Dev\10.Web\ultra\Config\MailFormat.xml
+2018-01-16 10:57:56 - =================================================
+2018-01-16 10:57:56 - =================================================

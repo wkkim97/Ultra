@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+경고: 이 파일은 수정하지 마세요. 웹 게시 프로세스에 사용됩니다.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45287ac8-fdec-4af4-bf92-ece1c159e538}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/ultra</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <SourceWebProject>http://localhost:4042/ultra</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/2/ROOT/ultra</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Core\Bayer.Ultra.Core\Bayer.Ultra.Core.csproj">
+      <Project>{42B67805-4E8A-4F99-ACB8-422F4D987A3C}</Project>
+      <Name>Bayer.Ultra.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Com\Bayer.Ultra.Framework.Common\Bayer.Ultra.Framework.Common.csproj">
+      <Project>{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}</Project>
+      <Name>Bayer.Ultra.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Com\Bayer.Ultra.Framework.Database\Bayer.Ultra.Framework.Database.csproj">
+      <Project>{970DD99E-A747-45FA-8550-683CE39BDE7B}</Project>
+      <Name>Bayer.Ultra.Framework.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Com\Bayer.Ultra.Framework\Bayer.Ultra.Framework.csproj">
+      <Project>{4DA5A06D-C707-476D-A6CA-543265EED5EF}</Project>
+      <Name>Bayer.Ultra.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.BusinessLayer\Bayer.Ultra.BSL.Approval\Bayer.Ultra.BSL.Approval.csproj">
+      <Project>{1a7a229f-873f-4d79-8f0a-f3ef96ba4571}</Project>
+      <Name>Bayer.Ultra.BSL.Approval</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.BusinessLayer\Bayer.Ultra.BSL.Common\Bayer.Ultra.BSL.Common.csproj">
+      <Project>{D43BD142-6CC0-4675-B27E-08CC2E14212F}</Project>
+      <Name>Bayer.Ultra.BSL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.BusinessLayer\Bayer.Ultra.BSL.Configuration\Bayer.Ultra.BSL.Configuration.csproj">
+      <Project>{2746A4AB-D1C5-46BE-A4F9-E758BC0CF28F}</Project>
+      <Name>Bayer.Ultra.BSL.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.BusinessLayer\Bayer.Ultra.BSL.Excel\Bayer.Ultra.BSL.Excel\Bayer.Ultra.BSL.Excel.csproj">
+      <Project>{3FAB94D0-B31B-44BE-A072-3085B53F607E}</Project>
+      <Name>Bayer.Ultra.BSL.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.BusinessLayer\Bayer.Ultra.BSL.Report\Bayer.Ultra.BSL.Report.csproj">
+      <Project>{8F630735-EF0B-47A2-9021-FB121A21896B}</Project>
+      <Name>Bayer.Ultra.BSL.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebBase\Bayer.Ultra.WebBase\Bayer.Ultra.WebBase.csproj">
+      <Project>{E5EDC922-FC49-4616-B712-ADFA5B78A2ED}</Project>
+      <Name>Bayer.Ultra.WebBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

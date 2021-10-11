@@ -1,0 +1,32 @@
+2018-01-03 10:09:42 - =================================================
+2018-01-03 10:09:42 - =================================================
+2018-01-03 10:09:42 - Interval : 5
+2018-01-03 10:09:42 - DailyTime : 10:10:00
+2018-01-03 10:09:42 - LogWriteYN : Y
+2018-01-03 10:09:42 - basicdate : 3
+2018-01-03 10:09:42 - LogFilePath : D:\Ultra-Dev\20.WinApp\SendMailAgent\SendMailAgent_Log
+2018-01-03 10:09:42 - smtpServer : exsmtp.de.bayer.cnb
+2018-01-03 10:09:42 - mailDomain : naver.com
+2018-01-03 10:09:42 - sender : ultra_kr@bayer.com
+2018-01-03 10:09:42 - senderps : oDRbIXLTkq9PSvIoMsUhcg==
+2018-01-03 10:09:42 - eventUrl : http://localhost/Ultra/Pages/Event/
+2018-01-03 10:09:42 - serviceUrl : http://localhost/ultra-svc/UltraCommon.svc
+2018-01-03 10:09:42 - mailFormat : D:\Ultra-Dev\10.Web\ultra\Config\MailFormat.xml
+2018-01-03 10:09:42 - =================================================
+2018-01-03 10:09:42 - =================================================
+2018-01-03 10:09:42 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-03 10:09:42 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-03 10:09:42 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-03 10:09:42 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-03 10:09:43 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-03 10:10:43 - 
+2018-01-03 10:10:43 - SendNoticeMail - 기준 날짜 계산....
+2018-01-03 10:10:43 - SendNoticeMail - 웹서비스 실행..../BasicDate = 2017-12-31
+2018-01-03 10:10:43 - SendNoticeMail - 발송항목 정보 = basicdate : 2017-12-31 / url : http://localhost/ultra-svc/UltraCommon.svc/SendNoticeMail/DelayApproval/2017-12-31
+2018-01-03 10:10:46 - SendNoticeMail.WcfSvc - 메일 발송 완료....
+2018-01-03 10:10:46 - SendNoticeMail - 장기간 미 결재자 목록 완료..../DayOfWeek = Wednesday
+2018-01-03 10:14:43 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-03 10:14:43 - 해당 IDX는 Violation (HCP) 목록에 존재하지 않습니다. wookyung.kim@bayer.com주소로 발송하지 못하였습니다.
+2018-01-03 10:14:43 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-03 10:14:43 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.
+2018-01-03 10:14:43 - hyunjung.yang@bayer.com주소로 Violation 메일을 발송하였습니다.

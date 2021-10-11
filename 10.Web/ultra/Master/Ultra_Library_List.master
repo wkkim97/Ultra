@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Ultra_Library_List.master.cs" Inherits="Master_Ultra_Library_List" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/ultra/Styles/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/ultra/Styles/JSGrid/jsgrid.css" />
+    <link rel="stylesheet" type="text/css" href="/ultra/Styles/JSGrid/jsgrid-theme-dn.css" />
+    <link rel="stylesheet" type="text/css" href="/ultra/Styles/Css/Style.css" />
+    <link rel="stylesheet" type="text/css" href="/ultra/Styles/Css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/ultra/Styles/Bootstrap/css/bootstrap-datetimepicker.css" />
+    <style type="text/css">
+        .jsgrid-grid-header,
+        .jsgrid-grid-body {
+            overflow: auto;
+        }
+    </style>
+    <title></title>
+    <!-- Web User Control에서 사용하기 위해 JQuery만 상단에-->
+    <script type="text/javascript" src="/ultra/Scripts/JQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load resize', function () {
+            // 부모 아이프레임 높이 자동조절
+            var contH = $('#l_frame').outerHeight();
+            var contH = contH + 100;
+            if (parent.document) {
+                if (contH < 900) contH = 900;
+                $('iframe.cont_frame', parent.document).height(contH);
+            }
+        });
+
+        // 데이터 호출 후 창 크기 변경 (스크롤)
+        $(document).ajaxComplete(function () { setTimeout(function () { $(window).resize(); }, 100); });
+    </script>
+    <asp:ContentPlaceHolder ID="cpHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="l_frame">
+    <form id="form1" runat="server">
+        <div id="wrap" class="container">
+            <div class="modal fade" id="Detail_Search" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+                            <h4 class="modal-title">Detail Search</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-table">
+                                <table class="write">
+                                    <colgroup>
+                                        <col style="width: 22%" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Item Name</th>
+                                            <td>
+                                                <div id="hdivDocList" class="form-control" runat="server" style="height: 300px; width: 100%; overflow-y: auto"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Subject</th>
+                                            <td>
+                                                <input type="text" id="lb_Subject" class="form-control" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Request Date</th>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="input-group date" data-date="">
+                                                            <input id="lb_DocStart" class="form-control" size="10" type="text" placeholder="Start Date" readonly="readonly" />
+                                                            <span class="input-group-addon"><span onclick="fn_DelInput('lb_DocStart')" class="fa fa-times"></span></span>
+                                                            <span class="input-group-addon form_datehour"><span class="fa fa-calendar-o" id="hbtnDocStart"></span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-group date" data-date="">
+                                                            <input id="lb_DocEnd" class="form-control" size="10" type="text" placeholder="End Date" readonly="readonly" />
+                                                            <span class="input-group-addon"><span onclick="fn_DelInput('lb_DocEnd')" class="fa fa-times"></span></span>
+                                                            <span class="input-group-addon form_datehour"><span class="fa fa-calendar-o" id="hbtnDocEnd"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Start Date</th>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="input-group date" data-date="">
+                                                            <input id="lb_EvtStart" class="form-control" size="10" type="text" placeholder="Start Date" readonly="readonly" />
+                                                            <span class="input-group-addon"><span onclick="fn_DelInput('lb_EvtStart')" class="fa fa-times"></span></span>
+                                                            <span class="input-group-addon form_datehour"><span class="fa fa-calendar-o" id="hbtnEvtStart"></span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-group date" data-date="">
+                                                            <input id="lb_EvtEnd" class="form-control" size="10" type="text" placeholder="End Date" readonly="readonly" />
+                                                            <span class="input-group-addon"><span onclick="fn_DelInput('lb_EvtEnd')" class="fa fa-times"></span></span>
+                                                            <span class="input-group-addon form_datehour"><span class="fa fa-calendar-o" id="hbtnEvtEnd"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-navy" data-dismiss="modal">Cancel</button>
+                            <button type="button" onclick="detailSearch()" class="btn btn-lg btn-red">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-topinfo">
+                <div class="panel-heading">
+                    <h1 class="panel-title"><asp:ContentPlaceHolder ID="cpHolderTitle" runat="server"></asp:ContentPlaceHolder></h1>
+                    <div class="btn-group btn-group-sm" role="group">
+                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#Detail_Search">Detail Search</a>
+                    </div>
+                </div>
+                <div class="panel-body pd">
+                    <asp:ContentPlaceHolder ID="cpHolderForm" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+            <input type="hidden" id="hddUserID" runat="server" />
+        </div>
+        <script type="text/javascript" src="/ultra/Styles/Bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/JSGrid/jsgrid.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Pages/FormEvent.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/Bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+        <asp:ContentPlaceHolder ID="cpHolderBottom" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

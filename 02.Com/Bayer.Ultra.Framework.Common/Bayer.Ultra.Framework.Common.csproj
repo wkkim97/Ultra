@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5E9E250-DC4B-4CC4-B88C-FA8132A62CD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bayer.Ultra.Framework.Common</RootNamespace>
+    <AssemblyName>Bayer.Ultra.Framework.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activedirectory\LdapQuery.cs" />
+    <Compile Include="ApprovalUtil.cs" />
+    <Compile Include="Dto\Approval\DTO_APPROVAL_LINE.cs" />
+    <Compile Include="Dto\Approval\DTO_CHANGE_VAULE.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_CHANGE.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_ICC_ATTACH_FILES.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_DONATION.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_DONATION_PRODUCT.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_PRODUCT_PRESENTATION_PRODUCT.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_ICC_MASTER.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_PAYMENT_CONCUR.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_UPLOAD_YOURDOCES.cs" />
+    <Compile Include="Dto\Approval\EventAgendaSummaryDto.cs" />
+    <Compile Include="Dto\Approval\FreeGoodExistSampleDto.cs" />
+    <Compile Include="Dto\Approval\HomeFromCRMDataDto.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_BYHCP.cs" />
+    <Compile Include="Dto\Approval\ModuleAgendaRuleDto.cs" />
+    <Compile Include="Dto\Common\DTO_COMMON_ABSENCE.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_ATTACH_FILES.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_CLINICAL_MEETING.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_CONGRESS.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_ADVENTISEMENT.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_EMPLOYEE_TRAINING.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_CONSULTING_MEETING.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_SCIENTIFIC_MEETING_PRODUCT.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_SCIENTIFIC_MEETING.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_FREE_GOOD_HCP.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_FREE_GOOD.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_PRODUCT_BRIEFING_PRODUCT.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_PRODUCT_SEMINAR.cs" />
+    <Compile Include="Dto\Approval\DTO_LOG_EVENT.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_AGENDA.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_AGENDA_ROLE.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_COST_PLAN.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_DELEGATION.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_PARTICIPANTS.cs" />
+    <Compile Include="Dto\Approval\DTO_MODULE_SEARCH_USER.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_INPUT_SRM.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_UPLOAD_CONCUR.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_UPLOAD_SRM.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_UPLOAD_SRM_HISTORY.cs" />
+    <Compile Include="Dto\Approval\DTO_PAYMENT_UPLOAD_SRM_TOTAL.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_APPROVAL_LIST.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_APPROVAL_USER_STATUS.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_APPROVER.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_APPROVER_ADDTIONAL.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_APPROVER_COMPLETED.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_WITHDRAW_LIST.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_REJECT_LIST.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_COMPLETED_LIST.cs" />
+    <Compile Include="Dto\Approval\DTO_PROCESS_EVENT.cs" />
+    <Compile Include="Dto\Approval\EventAttachFileResponseDto.cs" />
+    <Compile Include="Dto\Approval\EventFreeGoodDto.cs" />
+    <Compile Include="Dto\Approval\EventPaymentByHCPDto.cs" />
+    <Compile Include="Dto\Approval\EventPaymentLayerDto.cs" />
+    <Compile Include="Dto\Approval\EventPaymentPlanActualDto.cs" />
+    <Compile Include="Dto\Approval\Home3TimeVisitsDto.cs" />
+    <Compile Include="Dto\Approval\HomeApprovalQueueDto.cs" />
+    <Compile Include="Dto\Approval\HomeCountSummaryDto.cs" />
+    <Compile Include="Dto\Approval\HomeNotSubmittedDto.cs" />
+    <Compile Include="Dto\Approval\HomePendingApprovalDto.cs" />
+    <Compile Include="Dto\Approval\HomeDelegationDto.cs" />
+    <Compile Include="Dto\Approval\HomeVisitListDto.cs" />
+    <Compile Include="Dto\Approval\RequestApprovalDto.cs" />
+    <Compile Include="Dto\Common\AuthenticationDto.cs" />
+    <Compile Include="Dto\Common\DTO_COMMON_MEDICAL_SOCIETY.cs" />
+    <Compile Include="Dto\Common\DTO_COMMON_CODE_SUB.cs" />
+    <Compile Include="Dto\Common\DTO_LOGIN_HISTORY.cs" />
+    <Compile Include="Dto\Common\DTO_MASTER_COUNTRY.cs" />
+    <Compile Include="Dto\Common\DTO_MASTER_CRM_PRODUCT.cs" />
+    <Compile Include="Dto\Common\DTO_SENDMAIL.cs" />
+    <Compile Include="Dto\Common\DTO_USER_CONFIG_MENU_SORT.cs" />
+    <Compile Include="Dto\Common\HealthCareOfficeDto.cs" />
+    <Compile Include="Dto\Common\HealthCareProviderDto.cs" />
+    <Compile Include="Dto\Common\MailItem.cs" />
+    <Compile Include="Dto\Common\RejectDocumentMailCommentDto.cs" />
+    <Compile Include="Dto\Common\SendmailToAddressListDto.cs" />
+    <Compile Include="Dto\Common\UserAutocompleteDto.cs" />
+    <Compile Include="Dto\Common\MasterProductDto.cs" />
+    <Compile Include="Dto\Common\UserInfoDto.cs" />
+    <Compile Include="Dto\Configuration\ConfigurationConditionDto.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_APPROVER.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_APPROVER_CONDITION.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_COMPANY.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_COST_CATEGORY.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_PRODUCT_SEMINAR_PRODUCT.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_PRODUCT_BRIEFING.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_LIST.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_PRODUCT_PRESENTATION.cs" />
+    <Compile Include="Dto\Approval\DTO_EVENT_ATTENDEES_LIST_INFO.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_RECIPIENT.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_RECIPIENT_CONDITION.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_REVIEWER.cs" />
+    <Compile Include="Dto\Configuration\DTO_WF_CONFIG_REVIEWER_CONDITION.cs" />
+    <Compile Include="Dto\Configuration\EventTableColumnDto.cs" />
+    <Compile Include="Dto\Medical\ContractHcrDto.cs" />
+    <Compile Include="Dto\Medical\ContractDto.cs" />
+    <Compile Include="Dto\Medical\DTO_MEDICAL_HCP_PAYMENT.cs" />
+    <Compile Include="Dto\Medical\MedicalDto.cs" />
+    <Compile Include="Dto\Medical\pmslistDto.cs" />
+    <Compile Include="Dto\Medical\reviewerDto.cs" />
+    <Compile Include="Dto\Medical\DTO_MEDICAL_PMS.cs" />
+    <Compile Include="Dto\Medical\DTO_MEDICAL_EDITOR.cs" />
+    <Compile Include="Dto\Medical\DTO_MEDICAL_HCR_CONTRACT.cs" />
+    <Compile Include="Dto\Medical\DTO_MEDICAL_HCP_CONTRACT.cs" />
+    <Compile Include="Dto\Medical\DTO_MEDICAL_PRODUCTS.cs" />
+    <Compile Include="Dto\Medical\DTO_MEDICAL_INFO.cs" />
+    <Compile Include="Dto\Medical\MedicalInfoDto.cs" />
+    <Compile Include="Dto\Radiology\HCPInquiryDto.cs" />
+    <Compile Include="Dto\Radiology\NonOneKeyDto.cs" />
+    <Compile Include="Dto\Radiology\MicroMarketingDto.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_CONDITIONS.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_DIV_MEDICAL.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_DIV_MEDICAL_SRC.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_FREE_GOODS_DEVICE.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_FREE_GOODS.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_MARKET_RESEARCH.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_KRPIA.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_MEDICAL_STUDY.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_PARTICIPANTS.cs" />
+    <Compile Include="Dto\Report\DTO_MOHW_PLURALITY_MEDICAL.cs" />
+    <Compile Include="Dto\Report\DTO_REPORT_RECEIPT_FREE_GOOD.cs" />
+    <Compile Include="Dto\Report\MohwConditionDto.cs" />
+    <Compile Include="Dto\Report\AdminReportDto.cs" />
+    <Compile Include="Dto\Report\ReceiptForFreeGoodDto.cs" />
+    <Compile Include="Dto\Report\ReportColumnsDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmtpManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Core\Bayer.Ultra.Core\Bayer.Ultra.Core.csproj">
+      <Project>{42b67805-4e8a-4f99-acb8-422f4d987a3c}</Project>
+      <Name>Bayer.Ultra.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bayer.Ultra.Framework\Bayer.Ultra.Framework.csproj">
+      <Project>{4da5a06d-c707-476d-a6ca-543265eed5ef}</Project>
+      <Name>Bayer.Ultra.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

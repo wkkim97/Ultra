@@ -1,0 +1,15 @@
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Config\WebService.config
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Bayer.Ultra.Framework.Test.dll.config
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Bayer.Ultra.Framework.Test.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Bayer.Ultra.Framework.Test.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Bayer.Ultra.Core.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Bayer.Ultra.Framework.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Bayer.Ultra.Core.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\Bayer.Ultra.Framework.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\bin\Debug\ko\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\obj\Debug\Bayer.Ultra.Framework.Test.csproj.CopyComplete
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\obj\Debug\Bayer.Ultra.Framework.Test.dll
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\obj\Debug\Bayer.Ultra.Framework.Test.pdb
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\obj\Debug\Bayer.Ultra.Framework.Test.csproj.AssemblyReference.cache
+C:\Temp\ultra\80.Test\Bayer.Ultra.Framework.Test\obj\Debug\Bayer.Ultra.Framework.Test.csproj.CoreCompileInputs.cache

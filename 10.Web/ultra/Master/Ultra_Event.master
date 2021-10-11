@@ -1,0 +1,672 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Ultra_Event.master.cs" Inherits="Master_Ultra_Event" %>
+<%@ Register Src="~/Common/Controls/ApproveMenuBar.ascx" TagPrefix="uc1" TagName="ApproveMenuBar" %>
+<%@ Register Src="~/Pages/Event/Controls/EventCostPlan.ascx" TagName="EventCostPlan" TagPrefix="uc1" %>
+<%@ Register Src="~/Pages/Event/Controls/EventParticipients.ascx" TagPrefix="uc1" TagName="EventParticipients" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalRequestApproval.ascx" TagPrefix="uc1" TagName="ModalRequestApproval" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalAcceptApproval.ascx" TagPrefix="uc1" TagName="ModalAcceptApproval" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalRejectApproval.ascx" TagPrefix="uc1" TagName="ModalRejectApproval" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalEventComplete.ascx" TagPrefix="uc1" TagName="ModalEventComplete" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalForward.ascx" TagPrefix="uc1" TagName="ModalForward" %>
+<%@ Register Src="~/Pages/Event/Controls/EventAgenda.ascx" TagPrefix="uc1" TagName="EventAgenda" %>
+<%@ Register Src="~/Pages/Event/Controls/EventDelegation.ascx" TagPrefix="uc1" TagName="EventDelegation" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalForwardApproval.ascx" TagPrefix="uc1" TagName="ModalForwardApproval" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalInputComment.ascx" TagPrefix="uc1" TagName="ModalInputComment" %>
+<%@ Register Src="~/Pages/Event/Controls/EventPayment.ascx" TagPrefix="uc1" TagName="EventPayment" %>
+<%//@ Register Src="~/Pages/Event/Controls/EventChange.ascx" TagPrefix="uc1" TagName="EventChange" %> 
+<%@ Register Src="~/Pages/Event/Approval/ModalCancelApproval.ascx" TagPrefix="uc1" TagName="ModalCancelApproval" %>
+<%@ Register Src="~/Common/Controls/CRMProductSearcherModal.ascx" TagPrefix="uc1" TagName="CRMProductSearcherModal" %>
+<%@ Register Src="~/Pages/Event/Approval/ModalWithdraw.ascx" TagPrefix="uc1" TagName="ModalWithdraw" %>
+<%@ Register Src="~/Common/Controls/LayerWarning.ascx" TagPrefix="uc1" TagName="LayerWarning" %>
+<%@ Register Src="~/Common/Controls/LayerError.ascx" TagPrefix="uc1" TagName="LayerError" %>
+<%@ Register Src="~/Common/Controls/LayerInformation.ascx" TagPrefix="uc1" TagName="LayerInformation" %>
+<%@ Register Src="~/Common/Controls/LayerAlert.ascx" TagPrefix="uc1" TagName="LayerAlert" %>
+<!--// version 1.0.5 Admin Event Page for change by DM Team-->
+<%//@ Register Src="~/Common/Controls/LayerEvent_Change_value.ascx" TagPrefix="uc1" TagName="LayerEvent_Change_value" %>
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <title></title>
+    <link rel="shortcut icon" href="/ultra/Styles/images/favicon.ico" media="all" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="/ultra/Styles/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/ultra/Styles/JSGrid/jsgrid.css" />
+    <link rel="stylesheet" href="/ultra/Styles/JSGrid/jsgrid-theme-dn.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Bootstrap/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/Style.css" />
+    <link rel="stylesheet" href="/ultra/Styles/TextExt/css/textext.core.css" />
+    <link rel="stylesheet" href="/ultra/Styles/TextExt/css/textext.plugin.arrow.css" />
+    <link rel="stylesheet" href="/ultra/Styles/TextExt/css/textext.plugin.autocomplete.css" />
+    <link rel="stylesheet" href="/ultra/Styles/TextExt/css/textext.plugin.clear.css" />
+    <link rel="stylesheet" href="/ultra/Styles/TextExt/css/textext.plugin.focus.css" />
+    <link rel="stylesheet" href="/ultra/Styles/TextExt/css/textext.plugin.prompt.css" />
+    <link rel="stylesheet" href="/ultra/Styles/TextExt/css/textext.plugin.tags.css" />
+    <link rel="stylesheet" href="/ultra/Styles/Css/jquery.fileupload.css" />
+    <link href="/ultra/Styles/waitMe/waitMe.css" rel="stylesheet" />
+    <style type="text/css">
+        #tblGI_Participants td {
+            text-align: center;
+        }
+
+        .layer-screen-center {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            width: 100px;
+            height: 100%;
+            background: #f00;
+            margin: -50px 0 0 -50px;
+        }
+
+        .table-striped td {
+            word-break:break-all;
+            -ms-word-break: break-all;
+        }
+
+        .table-striped td strong {
+            font-size: 11px;
+        }
+
+    </style>
+    <!-- Web User Control에서 사용하기 위해 JQuery만 상단에-->
+    <script type="text/javascript" src="/ultra/Scripts/JQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load resize', function () {
+            // 부모 아이프레임 높이 자동조절
+
+            var contH = $('#l_frame').outerHeight();
+            var contH = contH + 100;
+            if (parent.document) {
+                if (contH < 900) contH = 900;
+                $('iframe.cont_frame', parent.document).height(contH);
+            }
+        });
+
+
+        $(document).on('change', 'textarea', function () {
+            var contH = $('#l_frame').outerHeight();
+            $('#l_frame').outerHeight(contH + $(this).height());
+            setTimeout(function () { $(window).resize(); }, 200);
+        });
+
+        function resizeScreen() {
+            /* 화면 Resize */
+            var contH = $('.container').outerHeight();
+
+            $('#l_frame').outerHeight(contH);
+            setTimeout(function () { $(window).resize(); }, 200);
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="cpHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="l_frame" onload="fn_WindowOnLoad()">
+    <form id="form1" runat="server">
+        <div id="wrap" class="container">
+            <div class="panel panel-topinfo">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnableCdn="true" />
+                <uc1:ApproveMenuBar runat="server" ID="ApproveMenuBar" />
+                <div class="panel-body">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Requester</th>
+                                <td><span id="hspanRequester" runat="server"></span></td>
+                                <th scope="row">Organization</th>
+                                <td><span id="hspanOrganization" runat="server"></span></td>
+                                <th scope="row">Retention Period</th>
+                                <td><span id="hspanRetaentionPeriod" runat="server"></span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Requested Date</th>
+                                <td><span id="hspanRequestedDate" runat="server"></span></td>
+                                <th scope="row">Event Key</th>
+                                <td><span id="hspanEventKey" runat="server"></span></td>
+                                <th scope="row">Status</th>
+                                <td><span id="hspanStatus" runat="server"></span></td>
+                            </tr>
+                            <tr id="rowReviewer" runat="server">
+                                <th scope="row">Reviewer</th>
+                                <td colspan="5" style="padding-top: 1px !important; padding-bottom: 1px !important;">
+                                    <%--<uc1:UserAutoCompleteBox runat="server" ID="UserAutoCompleteBox" />--%>
+                                    <textarea id="acbReviewer" class="example" rows="1" style="width: 100%"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="color:rgba(60, 118, 61, 1);padding:8px;">
+                                   
+                                    [PV]이벤트를 진행하는 과정에서 바이엘 제품 사용 후 발생한 이상사례 또는 바이엘 제품에 대한 안전성 정보를 인지하신 경우에는 인지하신 날부터 24시간 이내에 반드시 PV 팀으로 보고하셔야 합니다.
+                                    <br />
+									
+                                     - Contact Information(PV Team): <a href="mailto:pvkorea@bayer.com" >pvkorea@bayer.com</a> / 010-8846-6468
+									<br /><br />
+									<!-- ticket:INC0004923294-->
+                                    <font style="color:red">[방역수칙준수]식사 동반 모임의 경우, 방역수칙 상 사적모임 인원 제한 규정 확인 요망</font>
+                                    <!-- ticket:INC0004923294-->
+
+
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <ul id="tabEventMaster" class="nav nav-tabs nav-tabs-fixcenter" role="tablist">
+                <li id="tabForm" runat="server" role="presentation" class="active"><a href="#tpForm" aria-controls="tpForm" role="tab" data-toggle="tab">Form</a></li>
+                <li id="tabCostPlan" runat="server" role="presentation"><a href="#tpCostPlan" aria-controls="tpCostPlan" role="tab" data-toggle="tab">Cost Plan<i class="fa fa-commenting"></i></a></li>
+                <li id="tabParticipants" runat="server" role="presentation"><a href="#tpParticipants" aria-controls="tpParticipants" role="tab" data-toggle="tab">Participants<i class="fa fa-commenting"></i></a></li>
+                <li id="tabAgenda" runat="server" role="presentation"><a href="#tpAgenda" aria-controls="tpAgenda" role="tab" data-toggle="tab">Agenda<i class="fa fa-commenting"></i></a></li>
+                <li id="tabPayment" runat="server" role="presentation" class="disabled"><a href="#tpPayment" aria-controls="tpPayment" role="tab" data-toggle="tab">Payment<i class="fa"></i></a></li> 
+                <li id="tabEtc" runat="server" role="presentation"><a href="#tpEtc" aria-controls="tpEtc" role="tab" data-toggle="tab">Delegation</a></li>
+                <!--<li id="tabChange" runat="server" role="presentation"><a href="#tpChange" aria-controls="tpChange" role="tab" data-toggle="tab">Change History</a></li>-->
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="tpForm">
+                    <div class="box-panel">
+                        <div class="row row-md">
+                            <div id="divGI_FirstColumn" class="col-md-6">
+                                <div id="divGI_Main" class="panel panel-dashboard">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">General Information</h3>
+                                    </div>
+                                    <div id="divInputEvent" class="panel-body">
+                                        <asp:ContentPlaceHolder ID="cpHolderForm" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                                <asp:ContentPlaceHolder ID="cpHolderEtc" runat="server"></asp:ContentPlaceHolder>
+                                <!-- // .panel-dashboard -->
+                                <div id="divGI_CostPlan" class="panel panel-dashboard" runat="server">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Cost Plan</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p class="total">Total <strong>0</strong></p>
+                                        <table id="tblGI_CostPlan" class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Category</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col" class="text-right">Qty</th>
+                                                    <th scope="col" class="text-right">Price</th>
+                                                    <th scope="col" class="text-right">Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- // .panel-dashboard -->
+                                <div id="divGI_Participants" class="panel panel-dashboard" runat="server">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Participants</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p class="total">Total <strong>6</strong></p>
+                                        <table id="tblGI_Participants" class="table table-striped">
+                                            <colgroup>
+                                                <col style="width: 16.66%;" />
+                                                <col style="width: 16.66%;" />
+                                                <col style="width: 16.66%;" />
+                                                <col />
+                                                <col style="width: 16.66%;" />
+                                                <col style="width: 16.66%;" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" style="text-align: center;">Go</th>
+                                                    <th scope="col" style="text-align: center;">Public</th>
+                                                    <th scope="col" style="text-align: center;">Private</th>
+                                                    <th scope="col" style="text-align: center;">Other</th>
+                                                    <th scope="col" style="text-align: center;">Etc</th>
+                                                    <th scope="col" style="text-align: center;">Bayer</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- // .panel-dashboard -->
+                                <div id="divGI_Agenda" class="panel panel-dashboard" runat="server">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Agenda</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-striped" id="tblAgendaRoleSummary">
+                                            <colgroup>
+                                                <col style="width: 90px;">
+                                                <col style="width: 90px;">
+                                                <col>
+                                                <col style="width: 40%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Time</th>
+                                                    <th scope="col">Subject</th>
+                                                    <th scope="col">Role</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- // .panel-dashboard -->
+                            </div>
+                            <div id="divGI_SecondColumn" class="col-md-6">
+                                <div class="panel panel-dashboard">
+                                    <div id="divAttachFiles_EventCommon" class="attach" data-attachment-type="EventCommon">
+                                        <div class="attach-heading" style="border-bottom: 1px solid #e0e0e0">
+                                            <h3 class="attach-title">Attachment</h3>
+                                            <span class="btn btn-sm btn-navy fileinput-button">
+                                                <i class="fa fa-paperclip"></i>
+                                                <span>Attachment</span>
+                                                <!-- The file input field used as target for the file upload widget -->
+                                                <input class="fileupload" id="fileupload" type="file" name="files[]" multiple />
+                                            </span>
+                                            <!-- The global progress bar -->
+                                            <!-- The container for the uploaded files -->
+                                        </div>
+                                        <div id="progress" class="progress" style="height: 7px !important; display: none">
+                                            <div class="progress-bar progress-bar-success">
+                                            </div>
+                                        </div>
+                                        <div id="files" class="files">
+                                            <ul class="attach-list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // .panel-dashboard -->
+                                <div class="panel panel-dashboard" id="divGI_ApprovalLine" runat="server">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Approval History</h3><span id="hspanEventKey_1" runat="server"></span>
+                                    </div>
+                                    <div class="panel-body">
+                                        <asp:Table CssClass="table table-striped" runat="server" ID="tblGI_ApprovalLine">
+                                            <asp:TableHeaderRow>
+                                                <asp:TableHeaderCell Scope="Column">No</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell Scope="Column">Name</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell Scope="Column">Singed and Comment</asp:TableHeaderCell>
+                                            </asp:TableHeaderRow>
+
+                                        </asp:Table>
+                                        <!-- // .table -->
+                                        <table class="table table-striped" runat="server" id="tblGI_ApprovalLine_R">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Recipient</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <ul id="ulRecipient" class="inline-list" runat="server">
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- // .table -->
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Reviewer</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <ul id="ulReviewer" class="inline-list" runat="server">
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- // .table -->
+                                    </div>
+                                </div>
+                                <!-- // .panel-dashboard -->
+                                <div id="divGI_InputComment" class="panel panel-dashboard" runat="server">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Input Comment</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <asp:Table CssClass="table table-striped" runat="server" ID="tblInputComment">
+                                            <asp:TableHeaderRow>
+                                                <asp:TableHeaderCell Scope="Column" Width="25%">Name</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell Scope="Column" Width="25%">Type</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell Scope="Column" Width="50%">Comment</asp:TableHeaderCell>
+                                            </asp:TableHeaderRow>
+                                        </asp:Table>
+                                        <!-- // .table -->
+                                    </div>
+                                </div>
+                                <!-- // .panel-dashboard -->
+                            </div>
+                        </div>
+                        <!-- // .row-md -->
+                    </div>
+                    <!-- // .box-panel -->
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tpCostPlan">
+                    <uc1:EventCostPlan ID="EventCostPlan" runat="server" />
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tpParticipants">
+                    <uc1:EventParticipients runat="server" ID="EventParticipients" />
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tpAgenda">
+                    <uc1:EventAgenda runat="server" ID="EventAgenda" />
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tpPayment">
+                    <uc1:EventPayment runat="server" ID="EventPayment" />
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tpEtc">
+                    <uc1:EventDelegation runat="server" ID="EventDelegation" />
+                </div>
+				<%-- 
+                <div role="tabpanel" class="tab-pane" id="tpChange">
+                    <uc1:EventChange runat="server" ID="EventChange" />
+                </div>
+				--%>
+            </div>
+            <!-- 결재 관련 Modal  ---------------------------------------------->
+            <uc1:ModalRequestApproval runat="server" ID="ModalRequestApproval" />
+            <!-- 결재 요청 -->
+            <uc1:ModalForwardApproval runat="server" ID="ModalForwardApproval" />
+            <!-- Forward Approval -->
+            <uc1:ModalAcceptApproval runat="server" ID="ModalAcceptApproval" />
+            <!-- 결재 승인 -->
+            <uc1:ModalRejectApproval runat="server" ID="ModalRejectApproval" />
+            <!-- 결재 거절 -->
+            <uc1:ModalEventComplete runat="server" ID="ModalEventComplete" />
+            <!-- 이벤트 완료 -->
+            <uc1:ModalForward runat="server" ID="ModalForward" />
+            <!-- 완료이벤트 Forward -->
+            <uc1:ModalInputComment runat="server" ID="ModalInputComment" />
+            <!-- Input Comment -->
+            <uc1:ModalCancelApproval runat="server" ID="ModalCancelApproval" />
+            <!-- 결재 취소 -->
+            <uc1:ModalWithdraw runat="server" ID="ModalWithdraw" />
+            <!-- Withdraw -->
+            <!-- 결재 관련 Modal  ---------------------------------------------->
+
+            <uc1:LayerInformation runat="server" ID="LayerInformation" />
+            <!-- // #layer_success -->
+
+            <uc1:LayerError runat="server" ID="LayerError" />
+            <!-- // #layer_error -->
+            
+            <uc1:LayerWarning runat="server" ID="LayerWarning" />
+            <!-- // #layer_warning -->
+
+            <uc1:LayerAlert runat="server" ID="LayerAlert" />
+            <!-- // #layer_alert -->
+
+            <!--// version 1.0.5 Admin Event Page for change by DM Team-->
+            <%-- <uc1:LayerEvent_Change_value runat="server" ID="LayerEvent_Change_value" />--%>
+            <!-- // #layer_change value -->
+
+            <div class="modal fade" id="hcp_info" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+                            <h4 class="modal-title" id="myModalLabel">HCP Information</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-table">
+                                <table>
+                                    <colgroup>
+                                        <col style="50%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span id="hcpName"></span></td>
+                                            <td><span id="hcpCode"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table>
+                                    <colgroup>
+                                        <col style="50%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Organization</th>
+                                            <th>Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span id="hcoName"></span></td>
+                                            <td><span id="hcoCode"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table>
+                                    <colgroup>
+                                        <col style="50%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Specialty</th>
+                                            <th>Source</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span id="speName"></span></td>
+                                            <td><span id="srcName"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table>
+                                    <colgroup>
+                                        <col style="50%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Created By</th>
+                                            <th>Modified By</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span id="creator"></span></td>
+                                            <td><span id="updater"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="desc"><i class="fa fa-check"></i>Last modified at <span id="updateDate"></span>by <span id="descUpdater"></span></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-navy" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // #hcp_info -->
+        </div>
+        <uc1:CRMProductSearcherModal runat="server" ID="CRMProductSearcherModal" />
+        <input type="hidden" id="hddUserID" runat="server" />
+        <input type="hidden" id="hddEventID" runat="server" />
+        <input type="hidden" id="hddProcessID" runat="server" />
+        <input type="hidden" id="hddCompanyCode" runat="server" />
+        <input type="hidden" id="hddLifeCycle" runat="server" />
+        <input type="hidden" id="hddProcessStatus" runat="server" />
+        <input type="hidden" id="hddDelegation" runat="server" value="" />
+        <input type="hidden" id="hddRequesterID" runat="server" value="" />
+        <input type="hidden" id="hddSkipApproval" runat="server" value="" />
+        <input type="hidden" id="hddOnlyApproval" runat="server" value="" />
+        <input type="hidden" id="hddInformation" runat="server" />
+        <input type="hidden" id="informationMessage" runat="server" />
+        <input type="hidden" id="hddAutocompleteBoxEntries" runat="server" />
+        <input type="hidden" id="hddRejectedProcessId" runat="server" />
+        <input type="hidden" id="hddEventCompleteOption" runat="server" />
+        <input type="hidden" id="hddCRMStatus" runat="server" />
+        <!--<VeeVa Roll-out : Create event by CRM user>-->
+        <input type="hidden" id="hddisCRMUser" runat="server" />
+        <!-- version 1.0.5 Event complete 시 Consulting Event complete 시 medical compliance 문구 추가 -->
+        <input type="hidden" id="hddEventCompleteOption_medical" runat="server" />
+        
+        <script type="text/javascript" src="/ultra/Styles/Bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/JSGrid/jsgrid.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/Bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Common/Common.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Master/EventCommon.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Master/GeneralInformation.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Master/CostPlan.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Master/Participants.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Master/Agenda.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Master/Delegation.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Master/Change.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Pages/FormEvent.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.core.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.ajax.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.arrow.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.autocomplete.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.clear.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.filter.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.focus.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.prompt.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.suggestions.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/TextExt/js/textext.plugin.tags.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Common/UserAutocompleteBox.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Common/LyncStatus.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/JQuery/uploader/vendor/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/JQuery/uploader/jquery.iframe-transport.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/JQuery/uploader/jquery.fileupload.js"></script>
+        <script type="text/javascript" src="/ultra/Scripts/Common/FileUploader.js"></script>
+        <script src="/ultra/Scripts/Pages/Event/Controls/InputComment.js"></script>
+        <script type="text/javascript" src="/ultra/Styles/waitMe/waitMe.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $.ajaxSetup({ cache: false });
+                /* Reviewer 설정 */
+                var jsonReviewers = $('input[id$=hddAutocompleteBoxEntries]').val();
+                //alert(jsonReviewers);
+                if (jsonReviewers) {
+                    var objReviewers = JSON.parse(jsonReviewers);
+                    var reviewers = []
+                    for (var i = 0; i < objReviewers.length; i++) {
+                        var reviewer = {
+                            USER_ID: objReviewers[i].USER_ID,
+                            FULL_NAME: objReviewers[i].FULL_NAME,
+                            ORG_ACRONYM: objReviewers[i].ORG_ACRONYM
+                        }
+
+                        reviewers.push(reviewer);
+                    }
+                    $('#acbReviewer').textext()[0].tags().addTags(reviewers);
+                }
+                // 부모 아이프레임 높이 자동조절
+                //var contH = $('#l_frame').outerHeight();
+                //var contH = contH + 100
+                //$('#l_frame').outerHeight(contH);
+                //if (parent.document) {
+                //    if (contH < 900) contH = 900;
+                //    $('iframe.cont_frame', parent.document).height(contH);
+                //}
+                //$('body').waitMe('hide');
+
+                // 데이터 호출 후 창 크기 변경 (스크롤)
+
+                $(document).ajaxComplete(function (event, xhr, settings) {
+                    //					console.log(event);
+                    //				console.log(settings.url);
+                    //			alert("Triggered ajaxComplete handler. The result is " +xhr.responseText );
+                    //Mobile 에서 event complete 시 ajaxstop 작동하지 않아 ajaxcomplet 으로 변경
+                    //$('body').waitMe('hide');
+                    setTimeout(function () { $(window).resize(); }, 200);
+                });
+
+
+
+                $(document).ajaxStop(function () {
+                    //$('body').ajaxStop(function () {
+                    //$(document).ajaxComplete(function () {   
+
+                    $('body').waitMe('hide');
+
+                });
+            });
+
+            function loadForm() {
+                $('body').waitMe({
+                    effect: 'win8',
+                    text: 'Loading...'
+                });
+            }
+
+            function fn_CheckForwardApproval() {
+                var selectedUser = $('[id$=hddForwardApprovalUserID]').val();
+                if (!selectedUser) {
+                    $('#divNoneSelectedApprover').show();
+                    return false;
+                }
+                return true;
+            }
+
+            $('.modal').on('show.bs.modal', function (e) {
+                if (window.top.document.querySelector('iframe')) {
+                    $('.modal').css('height', $(window.parent).height() - 52 - 32 - 20); // 윈도우 - Top메뉴 - Tab버튼 - Padding
+                }
+            });
+            $('.modal').on('shown.bs.modal', function (e) {
+                if (window.top.document.querySelector('iframe')) {
+                    var wh = $(window.parent).height();
+                    var mh = $('.modal').css('height');
+                    if (wh > parseInt(mh.replace("px")))
+                        $(".modal").css("height", $(window.parent.document).height() - 52 - 32 - 20); // 윈도우 - Top메뉴 - Tab버튼 - Padding
+                }
+            });
+
+            $("body").click(function () {
+                $(".dropdown-toggle", window.parent.document).parent().removeClass('open');
+            });
+
+            $('.form_datetime').datetimepicker({
+                format: 'yyyy-mm-dd hh:ii',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                forceParse: 0,
+                minuteStep: 10
+            });
+            $("a[data-toggle='tab']").on("shown.bs.tab", function () { resizeScreen(); });
+        </script>
+        
+        <asp:ContentPlaceHolder ID="cpHolderBottom" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+</body>
+</html>

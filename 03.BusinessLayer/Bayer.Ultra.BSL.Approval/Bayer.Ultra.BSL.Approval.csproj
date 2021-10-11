@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A7A229F-873F-4D79-8F0A-F3EF96BA4571}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bayer.Ultra.BSL.Approval</RootNamespace>
+    <AssemblyName>Bayer.Ultra.BSL.Approval</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\90.Lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\90.Lib\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApprovalProcessContext.cs" />
+    <Compile Include="Dao\AdventiseBoothDao.cs" />
+    <Compile Include="Dao\DonationDao.cs" />
+    <Compile Include="Dao\FreeGoodDao.cs" />
+    <Compile Include="Dao\ClinicalRelatedMeetingDao.cs" />
+    <Compile Include="Dao\CongressEventDao.cs" />
+    <Compile Include="Dao\EmployeeTrainingDao.cs" />
+    <Compile Include="Dao\ConsultingMeetingDao.cs" />
+    <Compile Include="Dao\ProductPresentationMeetingDao.cs" />
+    <Compile Include="Dao\ScientificExchangedMeetingDao.cs" />
+    <Compile Include="Dao\ProductBriefingDao.cs" />
+    <Compile Include="ApprovalEventContext.cs" />
+    <Compile Include="Dao\ProductSeminarDao.cs" />
+    <Compile Include="Dao\_ApprovalDao.cs" />
+    <Compile Include="Mgr\AdventiseBoothMgr.cs" />
+    <Compile Include="Mgr\DonationMgr.cs" />
+    <Compile Include="Mgr\FreeGoodMgr.cs" />
+    <Compile Include="Mgr\ClinicalRelatedMeetingMgr.cs" />
+    <Compile Include="Mgr\CongressEventMgr.cs" />
+    <Compile Include="Mgr\EmployeeTrainingMgr.cs" />
+    <Compile Include="Mgr\ConsultingMeetingMgr.cs" />
+    <Compile Include="Mgr\ProductPresentationMeetingMgr.cs" />
+    <Compile Include="Mgr\ScientificExchangedMeetingMgr.cs" />
+    <Compile Include="Mgr\ProductBriefingMgr.cs" />
+    <Compile Include="Mgr\ProductSeminarMgr.cs" />
+    <Compile Include="Mgr\_ApprovalMgr_Nx.cs" />
+    <Compile Include="Mgr\_ApprovalMgr_Tx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Core\Bayer.Ultra.Core\Bayer.Ultra.Core.csproj">
+      <Project>{42b67805-4e8a-4f99-acb8-422f4d987a3c}</Project>
+      <Name>Bayer.Ultra.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Com\Bayer.Ultra.Framework.Common\Bayer.Ultra.Framework.Common.csproj">
+      <Project>{b5e9e250-dc4b-4cc4-b88c-fa8132a62cd7}</Project>
+      <Name>Bayer.Ultra.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Com\Bayer.Ultra.Framework.Database\Bayer.Ultra.Framework.Database.csproj">
+      <Project>{970dd99e-a747-45fa-8550-683ce39bde7b}</Project>
+      <Name>Bayer.Ultra.Framework.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Com\Bayer.Ultra.Framework\Bayer.Ultra.Framework.csproj">
+      <Project>{4da5a06d-c707-476d-a6ca-543265eed5ef}</Project>
+      <Name>Bayer.Ultra.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bayer.Ultra.BSL.Common\Bayer.Ultra.BSL.Common.csproj">
+      <Project>{d43bd142-6cc0-4675-b27e-08cc2e14212f}</Project>
+      <Name>Bayer.Ultra.BSL.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
