@@ -84,9 +84,20 @@ namespace Bayer.Ultra.BSL.Excel.Eao
                                 이를 <P열(Withhldg tax base amount)로 업로드 하되 P열의 값이 0인 경우, M열(Amount in local currency)+O열(Withholding tax amnt)로 업로드> 로 변경 요청 드립니다.
                                 참고하시도록 예시 자료 보내 드리며 추가적으로 필요하신 사항 있으시면 말씀 부탁 드립니다.
                              */
+                            /*
+                             * L열이 KRW라면 P열로 업로드 하되 P열이 0이면 M열+O열, L열이 KRW가 아니라면 M열로 업로드 : 20211215 by Sumin Jo
+                             */
                             //decimal dcAmount_in_local_currency = ConvertToDecimal(strAmount_in_local_currency) + dcwithholding_tax_amount;
                             decimal dcAmount_in_local_currency = dcwithholding_tax_baseamount;
-                            if (dcwithholding_tax_baseamount==0) dcAmount_in_local_currency = ConvertToDecimal(strAmount_in_local_currency) + dcwithholding_tax_amount;
+                            if (strDocument_currency == "KRW")
+                            {
+                                if (dcwithholding_tax_baseamount == 0) dcAmount_in_local_currency = ConvertToDecimal(strAmount_in_local_currency) + dcwithholding_tax_amount;
+                            }
+                            else
+                            {
+                                dcAmount_in_local_currency = ConvertToDecimal(strAmount_in_local_currency);
+                            }
+                            
 
                             string strUser_name = GetCellValue(doc, GetCell(row, "R"));
                             string strClearing_date = GetCellValue(doc, GetCell(row, "S"));

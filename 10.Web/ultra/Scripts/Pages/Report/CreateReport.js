@@ -20,7 +20,9 @@
                 };
 
                 dto = $.extend(dto, fn_GetFilter());
-                
+                if (type == "KRPIA") dto = $.extend(dto, fn_GetFilter_krpia());
+                console.log(type);
+                console.log(dto);
                 $('body').waitMe('show');
                 $.ajax({
                     url: REPORT_SERVICE_URL + "/InsertMohwReport",

@@ -326,6 +326,7 @@ namespace Bayer.Ultra.BSL.Report.Mgr
                     }
                     else if (mohwType.ToUpper() == Framework.Common.ApprovalUtil.MOHW_TYPE.DIV_MEDICAL)
                     {
+                        //TODO : 개별요양 기관
                         List<DTO_MOHW_DIV_MEDICAL> dto = dao.SelectMOHWIndividualMedical(mohwIdx);
                         Excel.Dao.FileHandler.CreateExcelDocument<DTO_MOHW_DIV_MEDICAL>(dto, columns, fileName);
                     }

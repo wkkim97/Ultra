@@ -14,11 +14,11 @@ var CONST = {
     REQUESTING: "재신청되었습니다.",
     REGISTERING: "Veeva에 자료를 등록중입니다.",
     COMPLETE: "처리가 완료되었습니다.",
-    APPROVER: "sumin.jo@bayer.com|emmayunjung.cho@bayer.com",
+    APPROVER: "sumin.jo@bayer.com|hyejoo.park@bayer.com",
     //APPROVER: "bumyoung.kim@bayer.com",
     IQVIA: "Mina.KIM@iqvia.com",
     //IQVIA: "bumyoung.kim@bayer.com",
-    CC: "Jaehoon.CHUNG@iqvia.com|sumin.jo@bayer.com|emmayunjung.cho@bayer.com"
+    CC: "Jaehoon.CHUNG@iqvia.com|sumin.jo@bayer.com|hyejoo.park@bayer.com"
     //CC: ""
 }
 $(function () {

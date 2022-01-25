@@ -322,13 +322,13 @@ namespace Bayer.Ultra.BSL.Common.Mgr
                     else
                     {
                         string eventUrl = string.Format(@"{0}{1}?processid={2}&eventid={3}&title={4}", documentUri, formName, processId, documentid, documentName);
-                        sbUrl.AppendFormat("http://{0}/Ultra/Pages/Authentication/Gate/GatewayAuth.aspx?ReturnURL=", Bayer.Ultra.Framework.Config.WebSiteConfigHandler.Login.Domain);
+                        sbUrl.AppendFormat("https://{0}/Ultra/Pages/Authentication/Gate/GatewayAuth.aspx?ReturnURL=", Bayer.Ultra.Framework.Config.WebSiteConfigHandler.Login.Domain);
                         sbUrl.AppendFormat(System.Web.HttpUtility.UrlEncode("/ultra/Pages/Main.aspx?maillink=Y&tabpage=" + System.Web.HttpUtility.UrlEncode(eventUrl)));
                     }
 
                     mail.To.Clear();
                     mail.CC.Clear();
-                    mail.To.Add("wookyung.kim@bayer.com,youngwoo.lee@bayer.com");
+                    mail.To.Add("wookyung.kim@bayer.com");
 
 
 
@@ -412,7 +412,7 @@ namespace Bayer.Ultra.BSL.Common.Mgr
 
                     DearName = firstItem.APPROVER_NAME;
                     string eventUrl = string.Format(@"{0}{1}?processid={2}&eventid={3}&title={4}", documentUri, firstItem.WEB_PAGE_NAME, processId, firstItem.EVENT_ID, firstItem.EVENT_NAME);
-                    sbUrl.AppendFormat("http://{0}/Ultra/Pages/Authentication/Gate/GatewayAuth.aspx?ReturnURL=" , Bayer.Ultra.Framework.Config.WebSiteConfigHandler.Login.Domain);
+                    sbUrl.AppendFormat("https://{0}/Ultra/Pages/Authentication/Gate/GatewayAuth.aspx?ReturnURL=" , Bayer.Ultra.Framework.Config.WebSiteConfigHandler.Login.Domain);
                     sbUrl.AppendFormat(System.Web.HttpUtility.UrlEncode("/ultra/Pages/Main.aspx?maillink=Y&tabpage=" + System.Web.HttpUtility.UrlEncode(eventUrl)));
          
                    //sbUrl.AppendFormat("http://{0}/ultra/Pages/Main.aspx?maillink=Y", Bayer.Ultra.Framework.Config.WebSiteConfigHandler.Login.Domain);
@@ -502,15 +502,15 @@ namespace Bayer.Ultra.BSL.Common.Mgr
                     }
 
                     // 메일 발송 테스트 계정 추후 제거 시작 
-                    {
-                        mail.To.Clear();
-                        mail.CC.Clear();
-                        mail.To.Add("wookyung.kim@bayer.com,loki_park@naver.com"); //
-                    }
+                    //{
+                    //    mail.To.Clear();
+                    //    mail.CC.Clear();
+                    //    mail.To.Add("wookyung.kim@bayer.com,loki_park@naver.com"); //
+                    //}
                     // 메일 발송 테스트 계정 추후 제거 끝
                     mail.To.Clear();
                     mail.CC.Clear();
-                    mail.To.Add("wookyung.kim@bayer.com,youngwoo.lee@bayer.com");
+                    mail.To.Add("wookyung.kim@bayer.com");
                     
                     mail.Body = body;
                     mail.IsBodyHtml = true;

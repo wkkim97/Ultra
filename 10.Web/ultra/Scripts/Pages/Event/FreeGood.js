@@ -204,7 +204,7 @@ function fn_InitEventDoc() {
 
         $("#btnProd").on("click", function () {
             var type = "T|" + $("#selPurpose option:selected").attr("sampleType");
-            
+            console.log(type);
             productSearch.show(fn_AddProductItem, type);
         });
 

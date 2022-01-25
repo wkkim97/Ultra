@@ -226,7 +226,7 @@ namespace Bayer.Ultra.BSL.Report
         /// <summary>
         ///  KRPIA (협회보고) Report 생성
         /// </summary>
-        public const string USP_INSERT_REPORT_MOHW_KRPIA = "[dbo].[USP_INSERT_REPORT_MOHW_KRPIA] @MOHW_IDX, @START_DATE, @END_DATE, @USER_ID";
+        public const string USP_INSERT_REPORT_MOHW_KRPIA = "[dbo].[USP_INSERT_REPORT_MOHW_KRPIA] @MOHW_IDX, @START_DATE, @END_DATE, @USER_ID,@TYPE";
 
         /// <summary>
         /// MOHW  KRPIA (협회보고) Report 조회(Excel 조회용)

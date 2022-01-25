@@ -838,12 +838,13 @@ namespace Bayer.Ultra.BSL.Report.Dao
             {
                 using (_context = new ReportContext())
                 {
-                    SqlParameter[] parameters = new SqlParameter[4];
+                    SqlParameter[] parameters = new SqlParameter[5];
                     parameters[0] = new SqlParameter("@MOHW_IDX", dto.IDX);
                     parameters[1] = new SqlParameter("@START_DATE", dto.START_DATE);
                     parameters[2] = new SqlParameter("@END_DATE", dto.END_DATE);
-                    parameters[3] = new SqlParameter("@TYPE", dto.KRPIA_TYPE);
-                    parameters[4] = new SqlParameter("@USER_ID", dto.CREATOR_ID);
+                    parameters[3] = new SqlParameter("@USER_ID", dto.CREATOR_ID);
+                    parameters[4] = new SqlParameter("@TYPE", dto.KRPIA_TYPE);
+                    
 
                     _context.Database.ExecuteSqlCommand(ReportContext.USP_INSERT_REPORT_MOHW_KRPIA, parameters);
                 }
@@ -901,9 +902,9 @@ namespace Bayer.Ultra.BSL.Report.Dao
                     return result.ToList();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 

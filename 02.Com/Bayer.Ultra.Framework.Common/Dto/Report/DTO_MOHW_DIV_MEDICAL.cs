@@ -34,7 +34,7 @@ namespace Bayer.Ultra.Framework.Common.Dto.Report
         public decimal AMOUNT { get; set; }
 
         [DataMember]
-        public string VENUE { get; set; }
+        public string ADDRESS_OF_VENUE { get; set; }
 
         [DataMember]
         public string EVENT_DATE { get; set; }

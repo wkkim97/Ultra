@@ -12,7 +12,7 @@ var CONST = {
     PROCESSING: "자료를 생성중입니다.",
     COMPLETE: "처리가 완료되었습니다.",
     DELIVERED: "HCP 에게 전달 되었습니다.",
-    APPROVER: "sumin.jo@bayer.com|emmayunjung.cho@bayer.com",
+    APPROVER: "sumin.jo@bayer.com|hyejoo.park@bayer.com",
     //APPROVER: "bumyoung.kim@bayer.com",
     //CC: "Jaehoon.CHUNG@iqvia.com|sumin.jo@bayer.com|daero.lee@bayer.com"
     CC: ""

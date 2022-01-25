@@ -90,7 +90,7 @@
                     <div class="checkbox">
                         <label>
                             <input class="chk-purpose-objective" type="checkbox" value="3" />
-                            제품의 보험심가기준 제공</label>
+                            제품의 보험심사기준 제공</label>
                     </div>
                     <div class="checkbox">
                         <label>

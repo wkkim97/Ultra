@@ -72,7 +72,7 @@
                     <h1 class="panel-title">Receipt For Free Good</h1> 
                     <div class="btnset">
                         <button type="button" class="btn btn-sm btn-navy fr" id="btnExcel"><i class="fa fa-floppy-o"></i>Excel</button>
-                        <button type="button" class="btn btn-sm btn-navy fr" id="btnExcel_report"><i class="fa fa-floppy-o"></i>Excel_report</button>
+                        <button type="button" class="btn btn-sm btn-navy fr" style="display:none" id="btnExcel_report"><i class="fa fa-floppy-o"></i>Excel_report</button>
                     </div>
                 </div>
                 <div class="panel-body pd"> 

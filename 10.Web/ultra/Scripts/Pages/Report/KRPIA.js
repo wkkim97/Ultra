@@ -89,14 +89,15 @@ function fn_InitControls()
     }); 
 }
 function fn_GetFilter_krpia() {
-
+    console.log("여기여기");
     var chkTYPEConsultingYN = $("#chkTYPEConsultingYN").is(":checked") ? "Y" : "N",
         chkTYPELectureYN = $("#chkTYPELectureYN").is(":checked") ? "Y" : "N"
-    var type = "ALL";
-    if (chkTYPEConsultingYN == "Y") { type = "Consulting"; }
-    if (chkTYPELectureYN == "Y") { type = "Lecture"; }
+    var type = "KRPIA";
+    var KRPIA_TYPE = "ALL";
+    if (chkTYPEConsultingYN == "Y") { KRPIA_TYPE = "Consulting"; }
+    if (chkTYPELectureYN == "Y") { KRPIA_TYPE = "Lecture"; }
     if (chkTYPEConsultingYN == "Y" && chkTYPELectureYN == "Y") {
-        type = "ALL";
+        KRPIA_TYPE = "ALL";
     }
         
 
@@ -110,6 +111,7 @@ function fn_GetFilter_krpia() {
         , END_DATE: strFormatedPODate
         , MOHW_TYPE: type
         , USER_ID: ""
+        , KRPIA_TYPE:KRPIA_TYPE
         
     };
     console.log(dto);

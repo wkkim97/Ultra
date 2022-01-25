@@ -50,7 +50,7 @@ namespace Bayer.Ultra.Framework.Common.Dto.Report
         /// <summary>
         /// 
         /// </summary> 
-        public string YOUR_DOCES_AMOUNT { get; set; }
+        public decimal? YOUR_DOCES_AMOUNT { get; set; }
 
         /// <summary>
         /// 
@@ -131,6 +131,7 @@ namespace Bayer.Ultra.Framework.Common.Dto.Report
         /// 
         /// </summary> 
         public int CNT { get; set; }
+        public string YOUR_DOCES_ID { get; set; }
 
     }
 
@@ -257,5 +258,6 @@ namespace Bayer.Ultra.Framework.Common.Dto.Report
         /// 
         /// </summary> 
         public int CNT { get; set; }
+        public string YOUR_DOCES_ID { get; set; }
     }
 }

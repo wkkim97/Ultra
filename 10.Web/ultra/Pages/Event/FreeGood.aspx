@@ -61,7 +61,7 @@
                         <option title="Programs" value="11" sampletype="HCP|NON-HCP">Programs</option>
                         <option title="Phantom Study" value="12" sampletype="HCP|NON-HCP">Phantom Study</option>
                         <option title="Demo-Gimmick(WH only)" value="14" sampletype="HCP|NON-HCP">Demo-Gimmick(WH only)</option>
-                         <option title="구매전 의료기기대여(RAD only)" value="16" sampletype="HCP">구매전 의료기기대여(RAD only)</option>
+                         <option title="구매전 의료기기대여(RAD only)" value="16" sampletype="RMD">구매전 의료기기대여(RAD only)</option>
                         <option title="Experience marketing (AH Only)" value="15" sampletype="NON-HCP">Experience marketing (AH Only)</option>
                     </select>
                 </td>
