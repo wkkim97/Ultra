@@ -49,7 +49,10 @@
                         <!-- // .tb-body -->
                     </div>
                     <div class="form-group row row-sm">
-                        <label>Role for participant input</label>
+                        <%----2022.04.18 comment out below line, INC15160130--%>
+<%--                        <label>Role for participant input</label>--%>
+                        <%----2022.04.18 add below line, INC15160130--%>
+                        <label>Role for participant status change</label>
                         <div id="divRdoDelegationRole" class="radio">
                             <label>
                                 <input type="radio" name="lb_role" checked value="Only Participants">
