@@ -53,16 +53,16 @@
                         <option title="임상시험용 (Investigational Medical Product)" value="3" sampletype="INVEST">임상시험용 (Investigational Medical Product)</option>
                         <!--<option title="Promotion (Only for CH)" value="4" sampletype="NON-HCP">Promotion (Only for CH)</option>-->
                         <option title="Medical Appliance for Injection" value="5" sampletype="NON-HCP">Medical Appliance for Injection</option>
-                        <option title="Product Testing(Only AH)" value="6" sampletype="NON-HCP">Product Testing(Only AH)</option>
-                        <option title="Clinical trial and Inspection" value="7" sampletype="NON-HCP">Clinical trial and Inspection</option>
+                        <!--<option title="Product Testing(Only AH)" value="6" sampletype="NON-HCP">Product Testing(Only AH)</option>--><!--Tickets No:INC15365079-->
+                        <!--<option title="Clinical trial and Inspection" value="7" sampletype="NON-HCP">Clinical trial and Inspection</option>--><!--Tickets No:INC15365079-->
                         <option title="Promotion(non-pharmaceutical products only)" value="8" sampletype="NON-HCP">Promotion(non-pharmaceutical products only)</option>
                         <option title="Product photograph" value="9" sampletype="HCP|NON-HCP">Product photograph</option>
-                        <option title="PPL-product placement for drama of other TVC" value="10" sampletype="HCP|NON-HCP">PPL-product placement for drama of other TVC</option>
-                        <option title="Programs" value="11" sampletype="HCP|NON-HCP">Programs</option>
-                        <option title="Phantom Study" value="12" sampletype="HCP|NON-HCP">Phantom Study</option>
+                        <!--<option title="PPL-product placement for drama of other TVC" value="10" sampletype="HCP|NON-HCP">PPL-product placement for drama of other TVC</option>--><!--Tickets No:INC15365079-->
+                        <!--<option title="Programs" value="11" sampletype="HCP|NON-HCP">Programs</option>--><!--Tickets No:INC15365079-->
+                        <!--<option title="Phantom Study" value="12" sampletype="HCP|NON-HCP">Phantom Study</option>--><!--Tickets No:INC15365079-->
                         <option title="Demo-Gimmick(WH only)" value="14" sampletype="HCP|NON-HCP">Demo-Gimmick(WH only)</option>
-                         <option title="구매전 의료기기대여(RAD only)" value="16" sampletype="RMD">구매전 의료기기대여(RAD only)</option>
-                        <option title="Experience marketing (AH Only)" value="15" sampletype="NON-HCP">Experience marketing (AH Only)</option>
+                        <option title="구매전 의료기기대여(RAD only)" value="16" sampletype="RMD|HCP">구매전 의료기기대여(RAD only)</option><!--Tickets No:INC15387473-->
+                        <!--<option title="Experience marketing (AH Only)" value="15" sampletype="NON-HCP">Experience marketing (AH Only)</option>--><!--Tickets No:INC15365079-->
                     </select>
                 </td>
             </tr>
@@ -97,6 +97,8 @@
                         <option value="kwangju">광주</option>
                         <option value="ansan">안산공장</option>
                         <option value="anseong">안성공장</option>
+                        <%-- 2022.06.20 add by qiang INC15741711--%>
+                        <option value="sunyudo">선유도사무실</option>
                     </select>
 
                 </td>
@@ -189,7 +191,7 @@
                             <tr>
                                 <th scope="row" style="text-align: left">HCP</th>
                                 <th scope="row" style="text-align: left">Sample</th>
-                                <th scope="row" style="text-align: left">Qty</th>
+                                <th scope="row" style="text-align: left">Qty<span id="notice" style="font-size:10px;">(Notice: 평가기간 동안 평가하기 위하여 필요한 최소수량)</span></th><!--Tickets No:INC15364999-->
                             </tr>
                             <tr>
                                 <td>
